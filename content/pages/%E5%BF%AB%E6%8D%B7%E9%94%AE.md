@@ -1,0 +1,32 @@
+**物品栏**是游戏的核心机制。物品栏分为背包库存和储存箱。
+
+所有物品需要摆放在背包库存中的[背包](pages/%E8%83%8C%E5%8C%85.html)上。背包库存上限为7乘9共63格。
+
+放置在储存箱的物品效果不会生效，例如：[存钱罐](pages/%E5%AD%98%E9%92%B1%E7%BD%90.html)不会产生金币，[萨满面具](pages/%E8%90%A8%E6%BB%A1%E9%9D%A2%E5%85%B7.html)商店中不会刷新符文。[石头徽章](pages/%E7%9F%B3%E5%A4%B4%E5%BE%BD%E7%AB%A0.html)是例外，即使放在储物箱里面商店仍然不会刷新职业专属物品。
+
+放置和排列物品
+-------
+
+*   **鼠标左键**拖动物品放到背包库存格子中可以拿取放置物品。
+*   **鼠标右键**或**鼠标滚轮**或使用**Q/E键**可以旋转拿取的物品。
+*   使用**方向键↑↓←→**可以整体移动所有物品
+*   **鼠标左键**框选可以移动多个选定的物品
+*   **Backspace退格键**可以将所有物品放入储存箱（背包除外）。
+*   拖动背包放置在已有物品的背包上会替换拿取下方的背包和背包上的物品。
+*   拖动背包时按下**Ctrl键**可以放置并直接替换下方的背包而不拿取物品。
+*   **Ctrl+鼠标左键**点击可以直接从物品栏和商店将物品移至仓库
+*   **Ctrl+数字键**可以储存现有的物品布置，再次按下**数字键**可以读取。
+*   **Ctrl+Z键**可以撤销上一步的操作，**Ctrl+Y**可以重做撤销的操作。
+
+| [v](pages/Template:%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html) · [d](pages/Template_talk:%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html) · [e](pages/Template:%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html) [游戏机制](pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html) |
+| --- |
+|  |
+| 物品栏和商店 | [物品栏](pages/%E5%BF%AB%E6%8D%B7%E9%94%AE.html) • [合成配方](pages/%E5%90%88%E6%88%90%E9%85%8D%E6%96%B9.html) • [商店机制](pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html#%E5%95%86%E5%BA%97%E6%9C%BA%E5%88%B6 "游戏机制") • [稀有度](pages/%E7%A8%80%E6%9C%89%E5%BA%A6.html) • [宝藏](pages/%E5%AE%9D%E8%97%8F.html) • [交易](pages/%E4%BA%A4%E6%98%93.html) |
+|  |
+| 战斗 | [伤害](pages/%E4%BC%A4%E5%AE%B3.html) • [命中率](pages/%E5%91%BD%E4%B8%AD%E7%8E%87.html) • [冷却](pages/%E5%86%B7%E5%8D%B4.html) • [暴击](pages/%E6%9A%B4%E5%87%BB.html) • [狂战士之怒](pages/%E7%8B%82%E6%88%98%E5%A3%AB%E4%B9%8B%E6%80%92.html) • [![Image 1: Block](../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png)](pages/%E6%8A%A4%E7%9B%BE.html "护盾") [护盾](pages/%E6%8A%A4%E7%9B%BE.html) • [恢复](pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E6%9C%BA%E5%88%B6%EF%BC%89.html) • [最大生命值](pages/%E6%9C%80%E5%A4%A7%E7%94%9F%E5%91%BD%E5%80%BC.html) • [疲惫](pages/%E7%96%B2%E6%83%AB.html) • [无敌](pages/%E6%97%A0%E6%95%8C.html) • [承受伤害](pages/%E6%89%BF%E5%8F%97%E4%BC%A4%E5%AE%B3.html) • [无效化](pages/%E6%97%A0%E6%95%88%E5%8C%96.html) • [反弹](pages/%E5%8F%8D%E5%BC%B9.html) • [复活](pages/%E5%A4%8D%E6%B4%BB.html) • [抵抗](pages/%E6%8A%B5%E6%8A%97.html) • [眩晕](pages/%E7%9C%A9%E6%99%95.html) • [净化](pages/%E5%87%80%E5%8C%96.html) • [不治](pages/%E4%B8%8D%E6%B2%BB.html) • [几率](pages/%E5%87%A0%E7%8E%87.html) |
+|  |
+| [增益效果](pages/%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C.html) | [![Image 2: Empower](../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png)](pages/%E5%85%85%E8%83%BD.html "充能") [充能](pages/%E5%85%85%E8%83%BD.html) • [![Image 3: Heat](../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png)](pages/%E7%8B%82%E7%83%AD.html "狂热") [狂热](pages/%E7%8B%82%E7%83%AD.html) • [![Image 4: Luck](../assets/images/1b6e57002dccd2aa7c95dd103f4b25af58e02d7dca2a1778084e254b89733e2f.png)](pages/%E5%B9%B8%E8%BF%90.html "幸运") [幸运](pages/%E5%B9%B8%E8%BF%90.html) • [![Image 5: 魔法](../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png)](pages/%E9%AD%94%E6%B3%95.html "魔法") [魔法](pages/%E9%AD%94%E6%B3%95.html) • [![Image 6: Regeneration](../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png)](pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C%EF%BC%89.html "恢复（增益效果）") [恢复](pages/%E6%81%A2%E5%A4%8D.html) • [![Image 7: Spikes](../assets/images/23bd118f23fe8f83e140e0e65ef5ad50c5ed726bab7e5777e31776c4587296d7.png)](pages/%E5%B0%96%E5%88%BA.html "尖刺") [尖刺](pages/%E5%B0%96%E5%88%BA.html) • [![Image 8: Vampirism](../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png)](pages/%E5%90%B8%E8%A1%80.html "吸血") [吸血](pages/%E5%90%B8%E8%A1%80.html) |
+|  |
+| [减益效果](pages/%E5%87%8F%E7%9B%8A%E6%95%88%E6%9E%9C.html) | [![Image 9: Blind](../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png)](pages/%E8%87%B4%E7%9B%B2.html "致盲") [致盲](pages/%E8%87%B4%E7%9B%B2.html) • [![Image 10: 冰冷](../assets/images/cdb29718e7c8b69559d41cde9ef76a105e34d16fba210b61d4c7bded2c706037.png)](pages/%E5%86%B0%E5%86%B7.html "冰冷") [冰冷](pages/%E5%86%B0%E5%86%B7.html) • [![Image 11: 中毒](../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png)](pages/%E4%B8%AD%E6%AF%92.html "中毒") [中毒](pages/%E4%B8%AD%E6%AF%92.html) |
+|  |
+| 其他 | [主客场](pages/%E4%B8%BB%E5%AE%A2%E5%9C%BA.html) • [战斗日志](pages/%E6%88%98%E6%96%97%E6%97%A5%E5%BF%97.html) • [游戏胜负](pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html#%E6%B8%B8%E6%88%8F%E8%83%9C%E8%B4%9F "游戏机制") • [游戏模式](pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html#%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F "游戏机制") |

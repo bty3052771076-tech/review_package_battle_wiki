@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>冷却</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Backpack Battles 中文 Wiki</h1>
+    </header>
+    <div class="layout">
+      <nav class="sidebar">
+        <h2>导航</h2>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../all-pages.html">全站索引</a></li>
+          <li><a href="../search.html">搜索</a></li>
+        </ul>
+        <p style="margin-top:16px; color: var(--muted); font-size: 13px;">共 812 页</p>
+      </nav>
+      <main class="content">
+        <p><strong>冷却</strong> (CD) 是所有有规律地触发的<a href="../pages/%E7%89%A9%E5%93%81.html">物品</a>所拥有的<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html">游戏机制</a>。</p>
+<p>在战斗中，物品会以冷却速度逐渐填充高亮。一旦完全填满，物品就会激活，冷却时间重置。</p>
+<p>只能激活一次的物品，例如背包中放置的大多数<a href="../pages/%E5%AE%9D%E7%9F%B3.html">宝石</a>、<a href="../pages/%E5%8D%A1%E7%89%8C.html">卡牌</a>，一旦激活就不会重置，但它们的冷却时间可以像其他物品一样受到影响。</p>
+<p>物品具有1000%（十倍）冷却速度的上限，即500层以上<a href="../pages/%E7%8B%82%E7%83%AD.html" title="狂热"><img alt="Image 1: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a> <a href="../pages/%E7%8B%82%E7%83%AD.html">狂热</a>无法使物品有更快的冷却。</p>
+<h2>影响冷却的因素</h2>
+<h2>计算公式</h2>
+<p>所有加减速的效果相加或相减，最终冷却由所有这种效果之和决定。</p>
+<p>如果总和为加速，使用以下公式：</p>
+<p>Cooldown=Base Cooldown 1 0 0%+Faster−Slower</p>
+<p>当前冷却 = 基础冷却 / ( 100% + 加速效果 - 减速效果 ）</p>
+<p>如果总和为减速，使用以下公式：</p>
+<p>Cooldown=Base Cooldown*(1 0 0%+Slower−Faster)</p>
+<p>当前冷却 = 基础冷却 x（ 100% + 减速效果 - 加速效果 ）</p>
+<p>简单来说，正的加速线性提升冷却速度，而负的减速则是线性提升冷却时间。</p>
+<h3>示例</h3>
+<p>4 s 1 0 0%+(4 0%+3 0%+2 0%+1 0%)−(2 0%)=4 s 1 8 0%=4 s 1.8=2.2 2 s</p>
+<p>4s / 100% + (40% + 30% + 20% + 10%) - (20%) = 4s / 180% = 4s / 1.8 = 2.22s</p>
+<p>另一个例子：</p>
+<ul>
+<li><a href="../pages/%E7%A5%9E%E5%9C%A3%E6%8A%A4%E7%94%B2.html">神圣护甲</a>：基础冷却3s</li>
+<li>2 x <a href="../pages/%E8%BF%85%E6%8D%B7%E6%89%8B%E5%A5%97.html">迅捷手套</a>： 2 x +20% = +40%加速</li>
+<li>50<a href="../pages/%E5%86%B0%E5%86%B7.html" title="冰冷"><img alt="Image 2: 冰冷" src="../assets/images/cdb29718e7c8b69559d41cde9ef76a105e34d16fba210b61d4c7bded2c706037.png" /></a> <a href="../pages/%E5%86%B0%E5%86%B7.html">冰冷</a>： 50 x -2% = -100%减速</li>
+<li>加速总计+40%，减速总计-100%，使用第二个公式，最终冷却时间为：</li>
+</ul>
+<p>3 s<em>(1 0 0%+1 0 0%−4 0%)=3 s</em>1 6 0%=4.8 s</p>
+<p>3s * (100% + 100% - 40%) = 3s * 160% = 4.8s</p>
+<h3>冷却表格</h3>
+<p>以基础冷却4s为例</p>
+<table>
+<thead>
+<tr>
+<th>速度</th>
+<th>冷却</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+200%</td>
+<td>1.33s</td>
+</tr>
+<tr>
+<td>+100%</td>
+<td>2s</td>
+</tr>
+<tr>
+<td>+50%</td>
+<td>2.67s</td>
+</tr>
+<tr>
+<td>+20%</td>
+<td>3.33s</td>
+</tr>
+<tr>
+<td>+10%</td>
+<td>3.64s</td>
+</tr>
+<tr>
+<td><strong>±0%</strong></td>
+<td><strong>4s</strong></td>
+</tr>
+<tr>
+<td>-10%</td>
+<td>4.4s</td>
+</tr>
+<tr>
+<td>-20%</td>
+<td>4.8s</td>
+</tr>
+<tr>
+<td>-50%</td>
+<td>6s</td>
+</tr>
+<tr>
+<td>-100%</td>
+<td>8s</td>
+</tr>
+<tr>
+<td>-200%</td>
+<td>12s</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a href="#">v</a> · <a href="#">d</a> · <a href="#">e</a> <a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html">游戏机制</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>物品栏和商店</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>战斗</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><a href="../pages/%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C.html">增益效果</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><a href="../pages/%E5%87%8F%E7%9B%8A%E6%95%88%E6%9E%9C.html">减益效果</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>其他</td>
+</tr>
+</tbody>
+</table>
+      </main>
+    </div>
+    <footer class="site-footer">离线版本，仅供本地阅读。</footer>
+  </body>
+</html>

@@ -1,0 +1,624 @@
+<!-- source: action=render -->
+
+<div class="mw-content-ltr mw-parser-output" lang="zh-Hans-CN" dir="ltr"><p>开发者的补丁说明可以在游戏中查看最新版本，在<a rel="nofollow" class="external text" href="https://discord.com/channels/808787494526910484/1113082295646175232">Discord频道#bpb-updates</a>可以查看之前版本的更新内容，或者在<a rel="nofollow" class="external text" href="https://store.steampowered.com/news/app/2427700">Steam</a>查看
+</p>
+<h2><span id=".E6.AD.A3.E5.BC.8F.E7.89.88.E7.89.88.E6.9C.AC.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="正式版版本历史">正式版版本历史</span></h2>
+<table class="styled nostyle-list sortable">
+<tbody><tr>
+<th><b>版本</b>
+</th>
+<th><b>日期</b>
+</th></tr>
+<tr>
+<td><a href="pages/1.0.9b.html" title="1.0.9b">1.0.9b</a>
+</td>
+<td>2025-12-05
+</td></tr>
+<tr>
+<td><a href="pages/1.0.9.html" title="1.0.9">1.0.9</a>
+</td>
+<td>2025-11-14
+</td></tr>
+<tr>
+<td><a href="pages/1.0.8.html" title="1.0.8">1.0.8</a>
+</td>
+<td>2025-09-26
+</td></tr>
+<tr>
+<td><a href="pages/1.0.7.html" title="1.0.7">1.0.7</a>
+</td>
+<td>2025-08-22
+</td></tr>
+<tr>
+<td><a href="pages/1.0.6.html" title="1.0.6">1.0.6</a>
+</td>
+<td>2025-07-25
+</td></tr>
+<tr>
+<td><a href="pages/1.0.5.html" title="1.0.5">1.0.5</a>
+</td>
+<td>2025-07-18
+</td></tr>
+<tr>
+<td><a href="pages/1.0.4.html" title="1.0.4">1.0.4</a>
+</td>
+<td>2025-07-11
+</td></tr>
+<tr>
+<td><a href="pages/1.0.3.html" title="1.0.3">1.0.3</a>
+</td>
+<td>2025-07-04
+</td></tr>
+<tr>
+<td><a href="pages/1.0.2.html" title="1.0.2">1.0.2</a>
+</td>
+<td>2025-06-27
+</td></tr>
+<tr>
+<td><a href="pages/1.0.1.html" title="1.0.1">1.0.1</a>
+</td>
+<td>2025-06-20
+</td></tr>
+<tr>
+<td><a href="pages/1.0.0.html" title="1.0.0">1.0.0</a>
+</td>
+<td>2025-06-14
+</td></tr></tbody></table>
+<h2><span id="EA.E9.98.B6.E6.AE.B5.E7.89.88.E6.9C.AC.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="EA阶段版本历史">EA阶段版本历史</span></h2>
+<table class="styled nostyle-list sortable mw-collapsible mw-collapsed">
+<tbody><tr>
+<th><b>版本</b>
+</th>
+<th><b>日期</b>
+</th></tr>
+<tr>
+<td><a href="pages/0.9.41.html" title="0.9.41">0.9.41</a>
+</td>
+<td>2025-05-16
+</td></tr>
+<tr>
+<td><a href="pages/0.9.40.html" title="0.9.40">0.9.40</a>
+</td>
+<td>2025-04-25
+</td></tr>
+<tr>
+<td><a href="pages/0.9.39.html" title="0.9.39">0.9.39</a>
+</td>
+<td>2025-04-18
+</td></tr>
+<tr>
+<td><a href="pages/0.9.38.html" title="0.9.38">0.9.38</a>
+</td>
+<td>2025-04-11
+</td></tr>
+<tr>
+<td><a href="pages/0.9.37.html" title="0.9.37">0.9.37</a>
+</td>
+<td>2025-04-04
+</td></tr>
+<tr>
+<td><a href="pages/0.9.36.html" title="0.9.36">0.9.36</a>
+</td>
+<td>2025-03-07
+</td></tr>
+<tr>
+<td><a href="pages/0.9.35.html" title="0.9.35">0.9.35</a>
+</td>
+<td>2025-02-28
+</td></tr>
+<tr>
+<td><a href="pages/0.9.34.html" title="0.9.34">0.9.34</a>
+</td>
+<td>2025-02-21
+</td></tr>
+<tr>
+<td><a href="pages/0.9.33.html" title="0.9.33">0.9.33</a>
+</td>
+<td>2025-02-14
+</td></tr>
+<tr>
+<td><a href="pages/0.9.32.html" title="0.9.32">0.9.32</a>
+</td>
+<td>2025-01-24
+</td></tr>
+<tr>
+<td><a href="pages/0.9.31.html" title="0.9.31">0.9.31</a>
+</td>
+<td>2025-01-17
+</td></tr>
+<tr>
+<td><a href="pages/0.9.30.html" title="0.9.30">0.9.30</a>
+</td>
+<td>2025-01-10
+</td></tr>
+<tr>
+<td><a href="pages/0.9.29.html" title="0.9.29">0.9.29</a>
+</td>
+<td>2025-01-03
+</td></tr>
+<tr>
+<td><a href="pages/0.9.28.html" title="0.9.28">0.9.28</a>
+</td>
+<td>2024-12-20
+</td></tr>
+<tr>
+<td><a href="pages/0.9.27.html" title="0.9.27">0.9.27</a>
+</td>
+<td>2024-11-29
+</td></tr>
+<tr>
+<td><a href="pages/0.9.26.html" title="0.9.26">0.9.26</a>
+</td>
+<td>2024-11-22
+</td></tr>
+<tr>
+<td><a href="pages/0.9.25.html" title="0.9.25">0.9.25</a>
+</td>
+<td>2024-11-15
+</td></tr>
+<tr>
+<td><a href="pages/0.9.24.html" title="0.9.24">0.9.24</a>
+</td>
+<td>2024-11-08
+</td></tr>
+<tr>
+<td><a href="pages/0.9.23d.html" title="0.9.23d">0.9.23d</a>
+</td>
+<td>2024-11-02
+</td></tr>
+<tr>
+<td><a href="pages/0.9.23.html" title="0.9.23">0.9.23</a>
+</td>
+<td>2024-10-11
+</td></tr>
+<tr>
+<td><a href="pages/0.9.22.html" title="0.9.22">0.9.22</a>
+</td>
+<td>2024-10-04
+</td></tr>
+<tr>
+<td><a href="pages/0.9.21.html" title="0.9.21">0.9.21</a>
+</td>
+<td>2024-09-27
+</td></tr>
+<tr>
+<td><a href="pages/0.9.20.html" title="0.9.20">0.9.20</a>
+</td>
+<td>2024-09-20
+</td></tr>
+<tr>
+<td><a href="pages/0.9.19.html" title="0.9.19">0.9.19</a>
+</td>
+<td>2024-08-30
+</td></tr>
+<tr>
+<td><a href="pages/0.9.18.html" title="0.9.18">0.9.18</a>
+</td>
+<td>2024-08-23
+</td></tr>
+<tr>
+<td><a href="pages/0.9.17.html" title="0.9.17">0.9.17</a>
+</td>
+<td>2024-08-16
+</td></tr>
+<tr>
+<td><a href="pages/0.9.16.html" title="0.9.16">0.9.16</a>
+</td>
+<td>2024-08-11
+</td></tr>
+<tr>
+<td><a href="pages/0.9.15.html" title="0.9.15">0.9.15</a>
+</td>
+<td>2024-07-19
+</td></tr>
+<tr>
+<td><a href="pages/0.9.14.html" title="0.9.14">0.9.14</a>
+</td>
+<td>2024-07-12
+</td></tr>
+<tr>
+<td><a href="pages/0.9.13.html" title="0.9.13">0.9.13</a>
+</td>
+<td>2024-07-05
+</td></tr>
+<tr>
+<td><a href="pages/0.9.12.html" title="0.9.12">0.9.12</a>
+</td>
+<td>2024-06-28
+</td></tr>
+<tr>
+<td><a href="pages/0.9.11.html" title="0.9.11">0.9.11</a>
+</td>
+<td>2024-06-07
+</td></tr>
+<tr>
+<td><a href="pages/0.9.10.html" title="0.9.10">0.9.10</a>
+</td>
+<td>2024-05-31
+</td></tr>
+<tr>
+<td><a href="pages/0.9.9.html" title="0.9.9">0.9.9</a>
+</td>
+<td>2024-05-24
+</td></tr>
+<tr>
+<td><a href="pages/0.9.8.html" title="0.9.8">0.9.8</a>
+</td>
+<td>2024-05-17
+</td></tr>
+<tr>
+<td><a href="pages/0.9.7.html" title="0.9.7">0.9.7</a>
+</td>
+<td>2024-04-26
+</td></tr>
+<tr>
+<td><a href="pages/0.9.6.html" title="0.9.6">0.9.6</a>
+</td>
+<td>2024-04-19
+</td></tr>
+<tr>
+<td><a href="pages/0.9.5.html" title="0.9.5">0.9.5</a>
+</td>
+<td>2024-04-12
+</td></tr>
+<tr>
+<td><a href="pages/0.9.4.html" title="0.9.4">0.9.4</a>
+</td>
+<td>2024-04-05
+</td></tr>
+<tr>
+<td><a href="pages/0.9.3.html" title="0.9.3">0.9.3</a>
+</td>
+<td>2024-03-29
+</td></tr>
+<tr>
+<td><a href="pages/0.9.2c.html" title="0.9.2c">0.9.2c</a>
+</td>
+<td>2024-03-26
+</td></tr>
+<tr>
+<td><a href="pages/0.9.2.html" title="0.9.2">0.9.2</a>
+</td>
+<td>2024-03-22
+</td></tr>
+<tr>
+<td><a href="pages/0.9.1.html" title="0.9.1">0.9.1</a>
+</td>
+<td>2024-03-15
+</td></tr>
+<tr>
+<td><a href="pages/0.9.0.html" title="0.9.0">0.9.0</a>
+</td>
+<td>2024-03-08
+</td></tr></tbody></table>
+<h2><span id="DEMO.E7.89.88.E6.9C.AC.E5.8E.86.E5.8F.B2"></span><span class="mw-headline" id="DEMO版本历史">DEMO版本历史</span></h2>
+<table class="styled nostyle-list sortable mw-collapsible mw-collapsed">
+<tbody><tr>
+<th><b>版本</b>
+</th>
+<th><b>日期</b>
+</th></tr>
+<tr>
+<td><a href="pages/0.8.4.html" title="0.8.4">0.8.4</a>
+</td>
+<td>2024-03-03
+</td></tr>
+<tr>
+<td><a href="pages/0.8.3.html" title="0.8.3">0.8.3</a>
+</td>
+<td>2024-02-25
+</td></tr>
+<tr>
+<td><a href="pages/0.8.2.html" title="0.8.2">0.8.2</a>
+</td>
+<td>2024-02-18
+</td></tr>
+<tr>
+<td><a href="pages/0.8.1.html" title="0.8.1">0.8.1</a>
+</td>
+<td>2024-02-11
+</td></tr>
+<tr>
+<td><a href="pages/0.8.0b.html" title="0.8.0b">0.8.0b</a>
+</td>
+<td>2024-02-05
+</td></tr>
+<tr>
+<td><a href="pages/0.8.0.html" title="0.8.0">0.8.0</a>
+</td>
+<td>2024-02-04
+</td></tr>
+<tr>
+<td><a href="pages/0.7.6.html" title="0.7.6">0.7.6</a>
+</td>
+<td>2024-01-28
+</td></tr>
+<tr>
+<td><a href="pages/0.7.5.html" title="0.7.5">0.7.5</a>
+</td>
+<td>2024-01-21
+</td></tr>
+<tr>
+<td><a href="pages/0.7.4.html" title="0.7.4">0.7.4</a>
+</td>
+<td>2024-01-14
+</td></tr>
+<tr>
+<td><a href="pages/0.7.3.html" title="0.7.3">0.7.3</a>
+</td>
+<td>2024-01-07
+</td></tr>
+<tr>
+<td><a href="pages/0.7.2.html" title="0.7.2">0.7.2</a>
+</td>
+<td>2023-12-31
+</td></tr>
+<tr>
+<td><a href="pages/0.7.1.html" title="0.7.1">0.7.1</a>
+</td>
+<td>2023-12-24
+</td></tr>
+<tr>
+<td><a href="pages/0.7.0.html" title="0.7.0">0.7.0</a>
+</td>
+<td>2023-12-17
+</td></tr>
+<tr>
+<td><a href="pages/0.6.4.html" title="0.6.4">0.6.4</a>
+</td>
+<td>2023-12-10
+</td></tr>
+<tr>
+<td><a href="pages/0.6.3.html" title="0.6.3">0.6.3</a>
+</td>
+<td>2023-12-03
+</td></tr>
+<tr>
+<td><a href="pages/0.6.2.html" title="0.6.2">0.6.2</a>
+</td>
+<td>2023-11-26
+</td></tr>
+<tr>
+<td><a href="pages/0.6.1b.html" title="0.6.1b">0.6.1b</a>
+</td>
+<td>2023-11-21
+</td></tr>
+<tr>
+<td><a href="pages/0.6.1.html" title="0.6.1">0.6.1</a>
+</td>
+<td>2023-11-19
+</td></tr>
+<tr>
+<td><a href="pages/0.6.0.html" title="0.6.0">0.6.0</a>
+</td>
+<td>2023-11-12
+</td></tr>
+<tr>
+<td><a href="pages/0.5.6c.html" title="0.5.6c">0.5.6c</a>
+</td>
+<td>2023-11-06
+</td></tr>
+<tr>
+<td><a href="pages/0.5.6b.html" title="0.5.6b">0.5.6b</a>
+</td>
+<td>2023-11-06
+</td></tr>
+<tr>
+<td><a href="pages/0.5.6.html" title="0.5.6">0.5.6</a>
+</td>
+<td>2023-11-05
+</td></tr>
+<tr>
+<td><a href="pages/0.5.5.html" title="0.5.5">0.5.5</a>
+</td>
+<td>2023-10-29
+</td></tr>
+<tr>
+<td><a href="pages/0.5.4d.html" title="0.5.4d">0.5.4d</a>
+</td>
+<td>2023-10-24
+</td></tr>
+<tr>
+<td><a href="pages/0.5.4e.html" title="0.5.4e">0.5.4e</a>
+</td>
+<td>2023-10-24
+</td></tr>
+<tr>
+<td><a href="pages/0.5.4c.html" title="0.5.4c">0.5.4c</a>
+</td>
+<td>2023-10-23
+</td></tr>
+<tr>
+<td><a href="pages/0.5.4b.html" title="0.5.4b">0.5.4b</a>
+</td>
+<td>2023-10-22
+</td></tr>
+<tr>
+<td><a href="pages/0.5.4.html" title="0.5.4">0.5.4</a>
+</td>
+<td>2023-10-22
+</td></tr>
+<tr>
+<td><a href="pages/0.5.3.html" title="0.5.3">0.5.3</a>
+</td>
+<td>2023-10-15
+</td></tr>
+<tr>
+<td><a href="pages/0.5.2.html" title="0.5.2">0.5.2</a>
+</td>
+<td>2023-10-08
+</td></tr>
+<tr>
+<td><a href="pages/0.5.1.html" title="0.5.1">0.5.1</a>
+</td>
+<td>2023-10-01
+</td></tr>
+<tr>
+<td><a href="pages/0.5.0.html" title="0.5.0">0.5.0</a>
+</td>
+<td>2023-09-25
+</td></tr>
+<tr>
+<td><a href="pages/0.4.3.html" title="0.4.3">0.4.3</a>
+</td>
+<td>2023-09-18
+</td></tr>
+<tr>
+<td><a href="pages/0.4.2.html" title="0.4.2">0.4.2</a>
+</td>
+<td>2023-09-10
+</td></tr>
+<tr>
+<td><a href="pages/0.4.1.html" title="0.4.1">0.4.1</a>
+</td>
+<td>2023-09-03
+</td></tr>
+<tr>
+<td><a href="pages/0.4.0b.html" title="0.4.0b">0.4.0b</a>
+</td>
+<td>2023-08-28
+</td></tr>
+<tr>
+<td><a href="pages/0.4.0.html" title="0.4.0">0.4.0</a>
+</td>
+<td>2023-08-27
+</td></tr>
+<tr>
+<td><a href="pages/0.3.9.html" title="0.3.9">0.3.9</a>
+</td>
+<td>2023-08-20
+</td></tr>
+<tr>
+<td><a href="pages/0.3.8b.html" title="0.3.8b">0.3.8b</a>
+</td>
+<td>2023-08-13
+</td></tr>
+<tr>
+<td><a href="pages/0.3.8.html" title="0.3.8">0.3.8</a>
+</td>
+<td>2023-08-13
+</td></tr>
+<tr>
+<td><a href="pages/0.3.7.html" title="0.3.7">0.3.7</a>
+</td>
+<td>2023-08-06
+</td></tr>
+<tr>
+<td><a href="pages/0.3.7b.html" title="0.3.7b">0.3.7b</a>
+</td>
+<td>2023-08-06
+</td></tr>
+<tr>
+<td><a href="pages/0.3.6b.html" title="0.3.6b">0.3.6b</a>
+</td>
+<td>2023-08-02
+</td></tr>
+<tr>
+<td><a href="pages/0.3.6.html" title="0.3.6">0.3.6</a>
+</td>
+<td>2023-07-30
+</td></tr>
+<tr>
+<td><a href="pages/0.3.5.html" title="0.3.5">0.3.5</a>
+</td>
+<td>2023-07-23
+</td></tr>
+<tr>
+<td><a href="pages/0.3.4b.html" title="0.3.4b">0.3.4b</a>
+</td>
+<td>2023-07-17
+</td></tr>
+<tr>
+<td><a href="pages/0.3.4.html" title="0.3.4">0.3.4</a>
+</td>
+<td>2023-07-16
+</td></tr>
+<tr>
+<td><a href="pages/0.3.3c.html" title="0.3.3c">0.3.3c</a>
+</td>
+<td>2023-07-10
+</td></tr>
+<tr>
+<td><a href="pages/0.3.3.html" title="0.3.3">0.3.3</a>
+</td>
+<td>2023-07-09
+</td></tr>
+<tr>
+<td><a href="pages/0.3.3b.html" title="0.3.3b">0.3.3b</a>
+</td>
+<td>2023-07-09
+</td></tr>
+<tr>
+<td><a href="pages/0.3.2b.html" title="0.3.2b">0.3.2b</a>
+</td>
+<td>2023-07-03
+</td></tr>
+<tr>
+<td><a href="pages/0.3.2.html" title="0.3.2">0.3.2</a>
+</td>
+<td>2023-07-02
+</td></tr>
+<tr>
+<td><a href="pages/0.3.1b.html" title="0.3.1b">0.3.1b</a>
+</td>
+<td>2023-06-26
+</td></tr>
+<tr>
+<td><a href="pages/0.3.1.html" title="0.3.1">0.3.1</a>
+</td>
+<td>2023-06-25
+</td></tr>
+<tr>
+<td><a href="pages/0.3.0.html" title="0.3.0">0.3.0</a>
+</td>
+<td>2023-06-18
+</td></tr>
+<tr>
+<td><a href="pages/0.2.1.html" title="0.2.1">0.2.1</a>
+</td>
+<td>2023-06-12
+</td></tr>
+<tr>
+<td><a href="pages/0.2.0.html" title="0.2.0">0.2.0</a>
+</td>
+<td>2023-06-12
+</td></tr>
+<tr>
+<td><a href="pages/0.1.1.html" title="0.1.1">0.1.1</a>
+</td>
+<td>2023-06-04
+</td></tr>
+<tr>
+<td><a href="pages/0.1.1b.html" title="0.1.1b">0.1.1b</a>
+</td>
+<td>2023-06-04
+</td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20251216200058
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.164 seconds
+Real time usage: 0.269 seconds
+Preprocessor visited node count: 967/1000000
+Revision size: 1190/4194304 bytes
+Post‐expand include size: 6036/4194304 bytes
+Template argument size: 1764/4194304 bytes
+Highest expansion depth: 4/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/10000000 bytes
+Number of processed Cargo queries: 3
+Time spent processing Cargo queries: 0.012 s (avg. 0.004 s)
+Number of Cargo row insertion attempts: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   21.926      1 -total
+ 29.50%    6.467    114 Template:PatchTablerow
+-->
+
+<!-- Saved in parser cache with key backpackbattles_zh:pcache:idhash:753-0!canonical!zh-cn and timestamp 20251216200058 and revision id 4946. Rendering was triggered because: page_view
+ -->
+</div>

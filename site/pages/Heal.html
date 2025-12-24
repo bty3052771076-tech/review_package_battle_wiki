@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Heal</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Backpack Battles 中文 Wiki</h1>
+    </header>
+    <div class="layout">
+      <nav class="sidebar">
+        <h2>导航</h2>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../all-pages.html">全站索引</a></li>
+          <li><a href="../search.html">搜索</a></li>
+        </ul>
+        <p style="margin-top:16px; color: var(--muted); font-size: 13px;">共 812 页</p>
+      </nav>
+      <main class="content">
+        <p><strong>恢复</strong>是一种表示玩家回血的<a href="../pages/游戏机制.html">游戏机制</a>。下文中的恢复量指玩家实际回复的生命数值。关于<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 1: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>，见<a href="../pages/恢复（增益效果）.html">恢复（增益效果）</a>。</p>
+<h2>恢复效果的增减</h2>
+<p><a href="../pages/File:HealEfficiency.png.html"><img alt="Image 2" src="../assets/images/6de8412d95918268475515bb4bbc7504457e0c6a20a6753c2115ff0940a5900e.png" /></a></p>
+<p>恢复效果增强</p>
+<p><a href="../pages/File:HealEfficiency_negative.png.html"><img alt="Image 3" src="../assets/images/8b34e59063d701171f3ed7ad53d6013dac100105c0b2e1974c504b3ed87c6858.png" /></a></p>
+<p>恢复效果降低</p>
+<p>恢复效果是加减运算的，可以被降低到0。</p>
+<p>恢复效果的增减也会影响到<a href="../pages/吸血.html">吸血</a>和<a href="../pages/血之黏黏.html">血之黏黏</a>等物品的生命偷取效果。</p>
+<h3>计算方法</h3>
+<p>恢复量=恢复生命值数量×(1 0 0%+恢复效果增强%−恢复效果降低%)</p>
+<h3>示例</h3>
+<ul>
+<li><a href="../pages/小蜗.html">小蜗</a>：恢复40点生命</li>
+<li><a href="../pages/吸血鬼梳子.html">吸血鬼梳子</a>: 生命恢复效果增强30%</li>
+<li>对手拥有2个<a href="../pages/腐败头盔.html">腐败头盔</a>：生命恢复效果降低 2×3 0%=6 0%</li>
+<li>对手在护甲或其他槽位镶嵌了1颗<a href="../pages/紫水晶.html">优质紫水晶</a>：生命恢复效果降低 30%</li>
+</ul>
+<p>4 0×(1 0 0%+3 0%−(6 0%+3 0%))=4 0×4 0%=1 6</p>
+<h2>恢复相关物品</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>名称</strong></th>
+<th><strong>效果</strong></th>
+<th><strong>职业</strong></th>
+<th><strong>稀有度</strong></th>
+<th><strong>价格</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../pages/不恐怖幽灵.html" title="不恐怖幽灵"><img alt="Image 4: UnsettlingPresence.png" src="../assets/images/405566051b4fb5b98740d6ea8587fc365ee2e9b6cf202cade384b783f26d1c83.png" /></a></td>
+<td><a href="../pages/不恐怖幽灵.html">不恐怖幽灵</a></td>
+<td>* 以你恢复量的30%作为<a href="../pages/效果.html" title="效果"><img alt="Image 5: 效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" /></a>伤害。 * <strong>每3s：</strong>消耗一个随机<a href="../pages/增益效果.html">增益效果</a>来<a href="../pages/恢复.html">恢复</a>生命值12点。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 6: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 7: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/不愈法杖.html" title="不愈法杖"><img alt="Image 8: StaffofUnhealing.png" src="../assets/images/bce5f16aabf975e28610488df6e2204176397e0420527091dde179dcdfab18b8.png" /></a></td>
+<td><a href="../pages/不愈法杖.html">不愈法杖</a></td>
+<td><strong>每2s：</strong><a href="../pages/恢复.html">恢复</a>25生命值。消耗4点<a href="../pages/魔法.html" title="魔法"><img alt="Image 9: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：2s内，向对手造成你治疗量100%的<a href="../pages/效果.html" title="效果"><img alt="Image 10: 效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" /></a>伤害。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 11: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>17<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 12: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/世界树树叶.html" title="世界树树叶"><img alt="Image 13: YggdrasilLeaf.png" src="../assets/images/268c09af2a545229a80e066c3edfb034fa8212e3cb0168ce563e029a5c3b6d35.png" /></a></td>
+<td><a href="../pages/世界树树叶.html">世界树树叶</a></td>
+<td>* <strong>战斗开始时：</strong>每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 14: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/自然.html" title="自然"><img alt="Image 15: 自然" src="../assets/images/0a224b7244ccbadc8a468c4bdea14de71626c44f58dc76c7400fc571d9be96fa.png" /></a>物品，获得2点<a href="../pages/魔法.html" title="魔法"><img alt="Image 16: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>和1层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 17: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>。 * <strong>每次消耗5点<a href="../pages/魔法.html" title="魔法"><img alt="Image 18: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：</strong><a href="../pages/恢复.html">获得</a>15点生命并<a href="../pages/净化.html">净化</a>2种随机<a href="../pages/减益效果.html">减益效果</a>。</td>
+<td><a href="../pages/游侠.html" title="游侠"><img alt="Image 19: 游侠" src="../assets/images/ffeac63a1723b8a99e8fddbbd648eb025802b11f663f270d0d15687db9740839.png" /></a> <a href="../pages/游侠.html">游侠</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 20: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/亡灵庇护.html" title="亡灵庇护"><img alt="Image 21: FalseLife.png" src="../assets/images/08b04d74292d3126521eb3e7b09ddc7bdfa88b52cb639683d06c2fd780973ac2.png" /></a></td>
+<td><a href="../pages/亡灵庇护.html">亡灵庇护</a></td>
+<td>* 物品的最大生命值提升效果+20%。 * <strong>过量治疗时：</strong>过量治疗的生命值增加为最大生命值。 * <strong>每7s：</strong><a href="../pages/恢复.html">恢复</a>10点生命值，且每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 22: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/黑暗.html" title="黑暗"><img alt="Image 23: 黑暗" src="../assets/images/78db464bd31a03fd90a32948329dba852e38b127115ccbb60a9db7266d1bdf6c.png" /></a>物品，生命值恢复+4。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 24: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 25: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/光之圣典.html" title="光之圣典"><img alt="Image 26: ScriptureofLight.png" src="../assets/images/68f58a7c34a51656766fad1de8c030ff5f569e802088648bff80073c9ef8348e.png" /></a></td>
+<td><a href="../pages/光之圣典.html">光之圣典</a></td>
+<td>* <strong>每3s：</strong>消耗1点<a href="../pages/魔法.html" title="魔法"><img alt="Image 27: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>来获得1层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 28: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>，并<a href="../pages/恢复.html">恢复</a>12点生命值。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 29: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/魔法卷轴.html">魔法卷轴</a>，此物品的触发速度快10%（<a href="../pages/神圣.html" title="神圣"><img alt="Image 30: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>的魔法卷轴算作2次）。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 31: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 32: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/光之黏黏.html" title="光之黏黏"><img alt="Image 33: LightGoobert.png" src="../assets/images/46870a471a5ddf8ef2d6a054a4b3406ea717f28bace06d02765ee292f1bc3af4.png" /></a></td>
+<td><a href="../pages/光之黏黏.html">光之黏黏</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 34: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到6次：</strong><a href="../pages/恢复.html">恢复</a>25点生命值。向对手施加7层<a href="../pages/致盲.html" title="致盲"><img alt="Image 35: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>，持续3s。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 36: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>16<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 37: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/剧毒蛙.html" title="剧毒蛙"><img alt="Image 38: PoisonFrog.png" src="../assets/images/d658291457baab50b6696b5d21b276ae35b5913ed7afa8f0023c80512526ec1b.png" /></a></td>
+<td><a href="../pages/剧毒蛙.html">剧毒蛙</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 39: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品获得10层<a href="../pages/增益效果.html">增益效果</a>：</strong><a href="../pages/恢复.html">恢复</a>12点生命值。 * <strong><a href="../pages/星星.html" title="星星"><img alt="Image 40: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品消耗10层<a href="../pages/增益效果.html">增益效果</a>：</strong>向对手施加2层<a href="../pages/中毒.html" title="中毒"><img alt="Image 41: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>，并获得1点<a href="../pages/魔法.html" title="魔法"><img alt="Image 42: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。 * <strong>每2.4s：</strong>向对手施加2层<a href="../pages/中毒.html" title="中毒"><img alt="Image 43: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>，并获得1点<a href="../pages/魔法.html" title="魔法"><img alt="Image 44: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 45: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>9<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 46: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/剧毒黏黏.html" title="剧毒黏黏"><img alt="Image 47: PoisonGoobert.png" src="../assets/images/54e7af10ac912f04633d614b9fbdf5645f3190be5077fbbc38f7fa100be42e94.png" /></a></td>
+<td><a href="../pages/剧毒黏黏.html">剧毒黏黏</a></td>
+<td><strong><a href="../pages/星星.html" title="星星"><img alt="Image 48: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到5次：</strong><a href="../pages/恢复.html">恢复</a>9点生命值并施加给对手4层<a href="../pages/中毒.html" title="中毒"><img alt="Image 49: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 50: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>12<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 51: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/吸血匕首.html" title="吸血匕首"><img alt="Image 52: BloodyDagger.png" src="../assets/images/435b0cb4ffa55f13e3eebb481fc80bc56617ef47f4bfc99997593577c65135bc.png" /></a></td>
+<td><a href="../pages/吸血匕首.html">吸血匕首</a></td>
+<td>* <strong>击中对手时：</strong>获得1层<a href="../pages/吸血.html" title="吸血"><img alt="Image 53: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>（每场战斗最高5层）。每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 54: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/吸血属性.html" title="吸血属性"><img alt="Image 55: 吸血" src="../assets/images/c7ccd3d2b6f17459fc26ec85e385143b29b52eb89ec6bfa744b71b1a6af0bbe3.png" /></a>物品，<a href="../pages/恢复.html">恢复</a>4点生命值。 * <strong><a href="../pages/眩晕.html">眩晕</a>对手：</strong>触发额外攻击。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 56: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>12<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 57: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/吸血鬼梳子.html" title="吸血鬼梳子"><img alt="Image 58: NocturnalLockLifter.png" src="../assets/images/8954095067615bc0058e18a7bb1518bf3dd633719282032e142664d50b710a47.png" /></a></td>
+<td><a href="../pages/吸血鬼梳子.html">吸血鬼梳子</a></td>
+<td>* <strong>战斗开始时：</strong>获得6层<a href="../pages/吸血.html" title="吸血"><img alt="Image 59: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>。 * <a href="../pages/星星.html" title="星星"><img alt="Image 60: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的武器将会偷取25%生命值（每有一个<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 61: 钻石" src="../assets/images/55db09d55adbc23fc734c415598406c7fb1ef55265846df001d69a3af042ad96.png" /></a>的<a href="../pages/吸血属性.html" title="吸血属性"><img alt="Image 62: 吸血" src="../assets/images/c7ccd3d2b6f17459fc26ec85e385143b29b52eb89ec6bfa744b71b1a6af0bbe3.png" /></a>物品，效果增强8%）。 * 生命<a href="../pages/恢复.html">恢复</a>效果增强30%。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 63: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 64: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/国王王冠.html" title="国王王冠"><img alt="Image 65: KingCrown.png" src="../assets/images/9dbf2a35751794a768396fc6836d939c64e03069bdd9a096e28f0caddeb95fda.png" /></a></td>
+<td><a href="../pages/国王王冠.html">国王王冠</a></td>
+<td>* <strong>每2.4s：</strong><a href="../pages/恢复.html">恢复</a>8点生命值，并保护1层增益效果不被移除。 * <strong>消耗10点<a href="../pages/魔法.html" title="魔法"><img alt="Image 66: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：</strong>在2.5s内<a href="../pages/无敌.html">无敌</a>（单次触发）。 * 镶嵌的<a href="../pages/宝石.html">宝石</a>获得50%效果增强。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 67: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>17<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 68: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/国王黏黏.html" title="国王黏黏"><img alt="Image 69: KingGoobert.png" src="../assets/images/7be7489edfd24979bc3437974a287efbaf26be8a8bd71ed834e5c811cf69ac0f.png" /></a></td>
+<td><a href="../pages/国王黏黏.html">国王黏黏</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 70: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到6次：</strong>获得35点生命值<a href="../pages/恢复.html">恢复</a>，保护3层<a href="../pages/增益效果.html">增益效果</a>不被移除，消耗4点<a href="../pages/魔法.html" title="魔法"><img alt="Image 71: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>在1.5s内变为<a href="../pages/无敌.html">无敌</a>（可触发3次）。 * 镶嵌的<a href="../pages/宝石.html">宝石</a>获得50%效果增强。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 72: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>23<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 73: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/大煮锅.html" title="大煮锅"><img alt="Image 74: Cauldron.png" src="../assets/images/cefca081767351af3ab3d45b1d9084c6881418a71285c803e79d2668b23b25a2.png" /></a></td>
+<td><a href="../pages/大煮锅.html">大煮锅</a></td>
+<td>* <strong>进入商店时：</strong>升级一个相邻的魔药。 * <strong>每2.7s：</strong><a href="../pages/恢复.html">恢复</a>20点生命值，或获得6点<a href="../pages/魔法.html" title="魔法"><img alt="Image 75: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>，或获得5层<a href="../pages/狂热.html" title="狂热"><img alt="Image 76: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 77: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的食物或魔药，效果触发快15%。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 78: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 79: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/小蜗.html" title="小蜗"><img alt="Image 80: Shelly.png" src="../assets/images/bfdeaec7c3eef6008b6f96d590ea7646290b0cbc5783f8652ebfd771a18ebee3.png" /></a></td>
+<td><a href="../pages/小蜗.html">小蜗</a></td>
+<td>* <a href="../pages/净化.html">净化</a>类效果触发时有25%的几率再额外净化一层<a href="../pages/减益效果.html">减益效果</a>。 * <strong>每12s：</strong><a href="../pages/净化.html">净化</a>6层<a href="../pages/减益效果.html">减益效果</a>并<a href="../pages/恢复.html">恢复</a>40点生命值。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 81: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/魔药.html">魔药</a>，效果触发快15%。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 82: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 83: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/尤克里里.html" title="尤克里里"><img alt="Image 84: Ukulele.png" src="../assets/images/73f27e4d186d7888a99b39ff26769d8c29b74123b89b6f18c499118ec2d4ba80.png" /></a></td>
+<td><a href="../pages/尤克里里.html">尤克里里</a></td>
+<td>* <strong><a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 85: 钻石" src="../assets/images/55db09d55adbc23fc734c415598406c7fb1ef55265846df001d69a3af042ad96.png" /></a>的<a href="../pages/乐器.html" title="乐器"><img alt="Image 86: 乐器" src="../assets/images/32362a3328355611b17785080ef77eb61a01fa95eac93c2ad3ee935b56c11c1d.png" /></a>物品激活时：</strong>随机快进一个非<a href="../pages/乐器.html" title="乐器"><img alt="Image 87: 乐器" src="../assets/images/32362a3328355611b17785080ef77eb61a01fa95eac93c2ad3ee935b56c11c1d.png" /></a>物品冷却时间20%。 * 你的生命<a href="../pages/恢复.html">恢复</a>效果加强20%。 * +15%的几率复制获得的<a href="../pages/增益效果.html">增益效果</a>。 <strong>每6s：</strong><a href="../pages/恢复.html">恢复</a>生命值30点，或获得5层随机<a href="../pages/增益效果.html">增益效果</a>，或向对手施加4层<a href="../pages/冰冷.html" title="冰冷"><img alt="Image 88: 冰冷" src="../assets/images/cdb29718e7c8b69559d41cde9ef76a105e34d16fba210b61d4c7bded2c706037.png" /></a>。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 89: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品，触发速度快10%。</td>
+<td><a href="../pages/冒险家.html" title="冒险家"><img alt="Image 90: 冒险家" src="../assets/images/d98d868049b997c6358f020b6043e88422e35622e5e7aa490f79d6a135680b9a.png" /></a> <a href="../pages/冒险家.html">冒险家</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 91: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/幽灵獾.html" title="幽灵獾"><img alt="Image 92: BadgerSpiritCompanion.png" src="../assets/images/dcd63bbac3554a9c3275725c31fc193636b6378d3131c86eecc9dee8dbe3a988.png" /></a></td>
+<td><a href="../pages/幽灵獾.html">幽灵獾</a></td>
+<td>* <strong>每4.2s：</strong>消耗1点<a href="../pages/魔法.html" title="魔法"><img alt="Image 93: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>来获得20点最大生命值，且每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 94: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/自然.html" title="自然"><img alt="Image 95: 自然" src="../assets/images/0a224b7244ccbadc8a468c4bdea14de71626c44f58dc76c7400fc571d9be96fa.png" /></a>物品，还会获得2的最大生命值加成。 * <strong>当生命值低于50%时：</strong><a href="../pages/恢复.html">恢复</a>最大生命值的20%（单次触发）。 * 你只能拥有1只<a href="../pages/幽灵动物伙伴.html">幽灵动物伙伴</a>。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 96: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 97: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/强力恶魔烧瓶.html" title="强力恶魔烧瓶"><img alt="Image 98: StrongDemonicFlask.png" src="../assets/images/436322abcf85215d9e521037d00b3cd825efcf86d353fb4cede4934f777567bd.png" /></a></td>
+<td><a href="../pages/强力恶魔烧瓶.html">强力恶魔烧瓶</a></td>
+<td><strong>当你对手的生命值降低到50%或你的生命值减低到25%时：</strong>消耗此魔药，根据对手身上的<a href="../pages/减益效果.html">减益效果</a>层数，每层造成带有100%生命偷取效果的0.6点<a href="../pages/效果.html" title="效果"><img alt="Image 99: 效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" /></a>伤害。在3s内，对手生命值<a href="../pages/恢复.html">恢复</a>效果降低30%。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 100: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>14<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 101: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/强力生命魔药.html" title="强力生命魔药"><img alt="Image 102: StrongHealthPotion.png" src="../assets/images/113cf3aca8b83a8c064e34b39a884a3b465482318b323df2fb0284012ff87ebb.png" /></a></td>
+<td><a href="../pages/强力生命魔药.html">强力生命魔药</a></td>
+<td><strong>当你的生命值低于50%时：</strong>消耗此魔药，<a href="../pages/恢复.html">恢复</a>24点生命值并获得3层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 103: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>，<a href="../pages/净化.html">净化</a>4层<a href="../pages/中毒.html" title="中毒"><img alt="Image 104: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 105: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>8<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 106: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/强力瘟疫烧瓶.html" title="强力瘟疫烧瓶"><img alt="Image 107: StrongPestilenceFlask.png" src="../assets/images/fa9e9214a90e0e62fb1344e8ee4e350cebfb6dd239e60c80bf07061c4e6fa7dc.png" /></a></td>
+<td><a href="../pages/强力瘟疫烧瓶.html">强力瘟疫烧瓶</a></td>
+<td><strong>对手<a href="../pages/恢复.html">恢复</a>生命值时：</strong>消耗此魔药并向对手施加3层<a href="../pages/中毒.html" title="中毒"><img alt="Image 108: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>并对自己施加1层<a href="../pages/中毒.html" title="中毒"><img alt="Image 109: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。经过3.5s后，再向对手施加3层<a href="../pages/中毒.html" title="中毒"><img alt="Image 110: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 111: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 112: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/彩虹巨大西兰花黏黏.html" title="彩虹巨大西兰花黏黏"><img alt="Image 113: RainbowGoobertAdventurer.png" src="../assets/images/9e0359100a961cdd3fcbf4eb966b9fa60c54c07662f99ac610abc1c7dea2944a.png" /></a></td>
+<td><a href="../pages/彩虹巨大西兰花黏黏.html">彩虹巨大西兰花黏黏</a></td>
+<td><strong><a href="../pages/星星.html" title="星星"><img alt="Image 114: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到9次：</strong><a href="../pages/恢复.html">恢复</a>生命值40点，获得20点<a href="../pages/护盾.html" title="护盾"><img alt="Image 115: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>，还有2层<a href="../pages/吸血.html" title="吸血"><img alt="Image 116: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>和2层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 117: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>，向对手施加3层<a href="../pages/致盲.html" title="致盲"><img alt="Image 118: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>，且<a href="../pages/星星.html" title="星星"><img alt="Image 119: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的武器获得4点伤害加成。</td>
+<td><a href="../pages/冒险家.html" title="冒险家"><img alt="Image 120: 冒险家" src="../assets/images/d98d868049b997c6358f020b6043e88422e35622e5e7aa490f79d6a135680b9a.png" /></a> <a href="../pages/冒险家.html">冒险家</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>53<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 121: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/彩虹球.html" title="彩虹球"><img alt="Image 122: PrismaticOrb.png" src="../assets/images/08e16a5765ad8835d01e7d13722daad8a4704dd5c8018a808508efa9987d26bb.png" /></a></td>
+<td><a href="../pages/彩虹球.html">彩虹球</a></td>
+<td>* <strong>开始战斗时：</strong>每有一个…… * <a href="../pages/星星.html" title="星星"><img alt="Image 123: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/魔法属性.html" title="魔法属性"><img alt="Image 124: 魔法属性" src="../assets/images/583b45a218d4aa856806a92ec366863b3a13123aac1d7bbec776638ddf9103a8.png" /></a>物品：获得2点<a href="../pages/魔法.html" title="魔法"><img alt="Image 125: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。 * <a href="../pages/星星.html" title="星星"><img alt="Image 126: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/吸血属性.html" title="吸血属性"><img alt="Image 127: 吸血" src="../assets/images/c7ccd3d2b6f17459fc26ec85e385143b29b52eb89ec6bfa744b71b1a6af0bbe3.png" /></a>物品：获得1点<a href="../pages/吸血.html" title="吸血"><img alt="Image 128: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>。 * <a href="../pages/星星.html" title="星星"><img alt="Image 129: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/神圣.html" title="神圣"><img alt="Image 130: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>物品：<a href="../pages/Heal.html">恢复</a>效果增强4%。 * <a href="../pages/星星.html" title="星星"><img alt="Image 131: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/黑暗.html" title="黑暗"><img alt="Image 132: 黑暗" src="../assets/images/78db464bd31a03fd90a32948329dba852e38b127115ccbb60a9db7266d1bdf6c.png" /></a>物品：向对手施加一个随机<a href="../pages/减益效果.html">减益效果</a>。 * <strong>每8s：</strong>获得每种<a href="../pages/增益效果.html">增益效果</a>1层。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 133: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>14<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 134: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/彩虹究极布丁黏黏.html" title="彩虹究极布丁黏黏"><img alt="Image 135: RainbowGoobertMegasludgeAlphapuddle.png" src="../assets/images/20bd687522de25c990a5ea987555dadb082d498c427361d8e16b9d48f2946295.png" /></a></td>
+<td><a href="../pages/彩虹究极布丁黏黏.html">彩虹究极布丁黏黏</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 136: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到9次：</strong><a href="../pages/恢复.html">恢复</a>40点血量，获得20点<a href="../pages/护盾.html" title="护盾"><img alt="Image 137: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>，还有2层<a href="../pages/吸血.html" title="吸血"><img alt="Image 138: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>和2层<a href="../pages/充能.html" title="充能"><img alt="Image 139: Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" /></a>，并施加3层<a href="../pages/致盲.html" title="致盲"><img alt="Image 140: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>。并给予<a href="../pages/星星.html" title="星星"><img alt="Image 141: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的武器+4点伤害。</td>
+<td><a href="../pages/游侠.html" title="游侠"><img alt="Image 142: 游侠" src="../assets/images/ffeac63a1723b8a99e8fddbbd648eb025802b11f663f270d0d15687db9740839.png" /></a> <a href="../pages/游侠.html">游侠</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>55<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 143: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/彩虹终极圆圆浓稠黏黏.html" title="彩虹终极圆圆浓稠黏黏"><img alt="Image 144: RainbowGoobertEpicglobUberviscous.png" src="../assets/images/edcda9493c30537385e3f9feb1e3e4e015176c8f7db22a2c510e6cb28478a652.png" /></a></td>
+<td><a href="../pages/彩虹终极圆圆浓稠黏黏.html">彩虹终极圆圆浓稠黏黏</a></td>
+<td><strong><a href="../pages/星星.html" title="星星"><img alt="Image 145: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到9次：</strong><a href="../pages/恢复.html">恢复</a>40点生命值并获得20点<a href="../pages/护盾.html" title="护盾"><img alt="Image 146: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>，还获得2层<a href="../pages/吸血.html" title="吸血"><img alt="Image 147: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>和4层<a href="../pages/狂热.html" title="狂热"><img alt="Image 148: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>，向对手施加3层<a href="../pages/致盲.html" title="致盲"><img alt="Image 149: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>。<a href="../pages/星星.html" title="星星"><img alt="Image 150: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的武器伤害+4。</td>
+<td><a href="../pages/火焰魔导士.html" title="火焰魔导士"><img alt="Image 151: 火焰魔导士" src="../assets/images/f6171448008368e0edfd37b6348c7a57e92a33e21d415b9ca472c6cbf6a3aa76.png" /></a> <a href="../pages/火焰魔导士.html">火焰魔导士</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>54<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 152: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/彩虹超级至尊黏黏.html" title="彩虹超级至尊黏黏"><img alt="Image 153: RainbowGoobertOmegaoozePrimeslime.png" src="../assets/images/21403c42c208ec0dd0e3673765bcc729340c0efa957e9dbf237f8bb111a79e05.png" /></a></td>
+<td><a href="../pages/彩虹超级至尊黏黏.html">彩虹超级至尊黏黏</a></td>
+<td><strong><a href="../pages/星星.html" title="星星"><img alt="Image 154: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到9次：</strong><a href="../pages/恢复.html">恢复</a>40点生命值，获得20点<a href="../pages/护盾.html" title="护盾"><img alt="Image 155: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>和2层<a href="../pages/吸血.html" title="吸血"><img alt="Image 156: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>，施加3层<a href="../pages/致盲.html" title="致盲"><img alt="Image 157: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>和3层<a href="../pages/中毒.html" title="中毒"><img alt="Image 158: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。<a href="../pages/星星.html" title="星星"><img alt="Image 159: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的武器伤害+4。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 160: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>55<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 161: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/彩虹鲜艳糖果黏黏.html" title="彩虹鲜艳糖果黏黏"><img alt="Image 162: RainbowGoobertMage.png" src="../assets/images/ec843b16e5060498deacaa1cc984dc687d75b065f11208826e02d1e540316bf8.png" /></a></td>
+<td><a href="../pages/彩虹鲜艳糖果黏黏.html">彩虹鲜艳糖果黏黏</a></td>
+<td><strong><a href="../pages/星星.html" title="星星"><img alt="Image 163: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到9次：</strong><a href="../pages/恢复.html">恢复</a>40点生命值，获得20点<a href="../pages/护盾.html" title="护盾"><img alt="Image 164: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>，还有2层<a href="../pages/吸血.html" title="吸血"><img alt="Image 165: Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" /></a>，2层你现有层数最多的<a href="../pages/增益效果.html">增益效果</a>。向对手施加3层<a href="../pages/致盲.html" title="致盲"><img alt="Image 166: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>，<a href="../pages/星星.html" title="星星"><img alt="Image 167: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的武器获得4点伤害加成。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 168: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>56<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 169: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/心之容器.html" title="心之容器"><img alt="Image 170: HeartContainer.png" src="../assets/images/29f3e41325a90a2fa7fea301ebdb74825c48edade82f04a9338cf6040e933ec9.png" /></a></td>
+<td><a href="../pages/心之容器.html">心之容器</a></td>
+<td>* <strong>每3s：</strong>获得1层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 171: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>。 * <strong>消耗7层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 172: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>：</strong>获得100点最大生命值，2层<a href="../pages/充能.html" title="充能"><img alt="Image 173: Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" /></a>，且生命<a href="../pages/恢复.html">恢复</a>效果增加15%（单词触发）。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 174: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>12<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 175: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/心形盾牌.html" title="心形盾牌"><img alt="Image 176: HeartShield.png" src="../assets/images/5c5a0a5beaecb2eb930689aefbcb759050980317352f881c138e64ae06ca2af6.png" /></a></td>
+<td><a href="../pages/心形盾牌.html">心形盾牌</a></td>
+<td>* <a href="../pages/星星.html" title="星星"><img alt="Image 177: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品获得的<a href="../pages/护盾.html" title="护盾"><img alt="Image 178: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>+30%,生命值<a href="../pages/恢复.html">恢复</a>效果加强30%，且有30%的几率复制获得的<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 179: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>。 * <strong>被攻击时（<a href="../pages/近战.html" title="近战"><img alt="Image 180: 近战" src="../assets/images/7e1844ca83fb494317db372c6aee6df1fe281916bce37fc1f19213415df44f7c.png" /></a>）：</strong>有30%的几率抵挡14点伤害，移除对手0.7点<a href="../pages/耐力.html">耐力</a>并获得1层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 181: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>（最高20层）。 * <strong>消耗7层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 182: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>：</strong>还能抵挡<a href="../pages/远程.html" title="远程"><img alt="Image 183: 远程" src="../assets/images/157250e4fda9aea26ae09e11886c23c0211d75a337fb1cdfa7d1e10f882eb833.png" /></a>和<a href="../pages/效果.html" title="效果"><img alt="Image 184: 效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" /></a>伤害，并获得150的最大生命值（单次触发）。</td>
+<td><a href="../pages/冒险家.html" title="冒险家"><img alt="Image 185: 冒险家" src="../assets/images/d98d868049b997c6358f020b6043e88422e35622e5e7aa490f79d6a135680b9a.png" /></a> <a href="../pages/冒险家.html">冒险家</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>26<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 186: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/急速小蜗.html" title="急速小蜗"><img alt="Image 187: TurboShelly.png" src="../assets/images/c4b32688060f267df9d02e47139b23a95d4540d7720a1e0b25602143964a3593.png" /></a></td>
+<td><a href="../pages/急速小蜗.html">急速小蜗</a></td>
+<td>* <a href="../pages/净化.html">净化</a>效果时有25%的几率再次净化一个额外<a href="../pages/减益效果.html">减益效果</a>。 * <strong>每11s：</strong>获得2层<a href="../pages/狂热.html" title="狂热"><img alt="Image 188: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>，<a href="../pages/净化.html">净化</a>6层减益效果并<a href="../pages/恢复.html">恢复</a>40点生命值。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 189: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的魔药，触发速度快30%。</td>
+<td><a href="../pages/火焰魔导士.html" title="火焰魔导士"><img alt="Image 190: 火焰魔导士" src="../assets/images/f6171448008368e0edfd37b6348c7a57e92a33e21d415b9ca472c6cbf6a3aa76.png" /></a> <a href="../pages/火焰魔导士.html">火焰魔导士</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>8<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 191: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/恋人.html" title="恋人"><img alt="Image 192: TheLovers.png" src="../assets/images/df63a80c06b1fe7a927ef9f4c66be851eeb5337a205ad6380d6f54764bbe46a8.png" /></a></td>
+<td><a href="../pages/恋人.html">恋人</a></td>
+<td>* <strong>翻开时：</strong>造成带有100%生命偷取效果的7点<a href="../pages/效果.html" title="效果"><img alt="Image 193: 效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" /></a>伤害。 * 如果之前翻开的卡牌数量是偶数，获得2层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 194: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>且你的生命<a href="../pages/恢复机制.html">恢复</a>效果加强6%。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 195: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/普通.html">普通</a></td>
+<td>3<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 196: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/日耀护甲.html" title="日耀护甲"><img alt="Image 197: SunArmor.png" src="../assets/images/a62129ba4bc08dc1903b63a3f4db2a73cbd95bd3b7abd573aad292e23f17b464.png" /></a></td>
+<td><a href="../pages/日耀护甲.html">日耀护甲</a></td>
+<td>* <a href="../pages/星星.html" title="星星"><img alt="Image 198: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/火.html" title="火"><img alt="Image 199: 火" src="../assets/images/40dc0dacb94e9ff10636d33eeaed36a6befc1d8ebcfa2cd7d21fb7bfb5f3f7fb.png" /></a>物品获得<a href="../pages/神圣.html" title="神圣"><img alt="Image 200: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>属性。 * <strong>战斗开始时：</strong>获得70点<a href="../pages/护盾.html" title="护盾"><img alt="Image 201: Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" /></a>。每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 202: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/神圣.html" title="神圣"><img alt="Image 203: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>物品，获得1层<a href="../pages/狂热.html" title="狂热"><img alt="Image 204: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>。 * <strong>每3s：</strong>消耗1层<a href="../pages/狂热.html" title="狂热"><img alt="Image 205: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>来获得12点生命<a href="../pages/恢复.html">恢复</a>，并移除2层减益效果。</td>
+<td><a href="../pages/火焰魔导士.html" title="火焰魔导士"><img alt="Image 206: 火焰魔导士" src="../assets/images/f6171448008368e0edfd37b6348c7a57e92a33e21d415b9ca472c6cbf6a3aa76.png" /></a> <a href="../pages/火焰魔导士.html">火焰魔导士</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>14<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 207: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/极乐小鸟.html" title="极乐小鸟"><img alt="Image 208: ParadiseBirb.png" src="../assets/images/c5ba25629ca94f765adf8afe3e27f149ae71f74308f95c72ac2253d128c39d19.png" /></a></td>
+<td><a href="../pages/极乐小鸟.html">极乐小鸟</a></td>
+<td>* <strong>每2.7s：</strong>有7%的几率复制从<a href="../pages/星星.html" title="星星"><img alt="Image 209: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>物品处获得的增益效果，生命<a href="../pages/恢复.html">恢复</a>效果+7%，触发速度+7%（最多10次）。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 210: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>20<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 211: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/水元素.html" title="水元素"><img alt="Image 212: WaterElemental.png" src="../assets/images/c5a04787a8fe323f9a74a7a6a5fa6f93a3af807d35ce18e9f3a35d3525018a33.png" /></a></td>
+<td><a href="../pages/水元素.html">水元素</a></td>
+<td>* <strong>击中对手：</strong>获得2点<a href="../pages/魔法.html" title="魔法"><img alt="Image 213: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 214: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/自然.html" title="自然"><img alt="Image 215: 自然" src="../assets/images/0a224b7244ccbadc8a468c4bdea14de71626c44f58dc76c7400fc571d9be96fa.png" /></a>物品，就有10%的几率再获得2点<a href="../pages/魔法.html" title="魔法"><img alt="Image 216: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。 * 每有一个<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 217: 钻石" src="../assets/images/55db09d55adbc23fc734c415598406c7fb1ef55265846df001d69a3af042ad96.png" /></a>的<a href="../pages/冰.html" title="冰"><img alt="Image 218: 冰" src="../assets/images/8e8e5ea8156e2144171328e033a21831de7047758206d67cb4aa56ec4920b00a.png" /></a>物品，攻击速度快10%。 * <strong>消耗10点<a href="../pages/魔法.html" title="魔法"><img alt="Image 219: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：</strong>击中对手时<a href="../pages/恢复.html">恢复</a>10点生命值（单次触发）。 * <strong>消耗20点<a href="../pages/魔法.html" title="魔法"><img alt="Image 220: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：</strong>获得15点伤害加成（单次触发）。 * <strong>消耗30点<a href="../pages/魔法.html" title="魔法"><img alt="Image 221: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：</strong>击中对手时向对手施加3层<a href="../pages/冰冷.html" title="冰冷"><img alt="Image 222: 冰冷" src="../assets/images/cdb29718e7c8b69559d41cde9ef76a105e34d16fba210b61d4c7bded2c706037.png" /></a>（单次触发）。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 223: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 224: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/火辣香蕉.html" title="火辣香蕉"><img alt="Image 225: SpicyBanana.png" src="../assets/images/519f52c8272288f3f874b377bcc1b41e735aa9cda4cecde168dc84d9be9883a3.png" /></a></td>
+<td><a href="../pages/火辣香蕉.html">火辣香蕉</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 226: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的香蕉激活时：</strong>有75%的几率获得1层<a href="../pages/狂热.html" title="狂热"><img alt="Image 227: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>。 * <strong>每消耗1点<a href="../pages/耐力.html">耐力</a>：</strong><a href="../pages/恢复.html">恢复</a>3点生命值。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 228: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 229: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/爱的拼图背包.html" title="爱的拼图背包"><img alt="Image 230: PuzzlebagL.png" src="../assets/images/a119bc1f9a66229131351c4c2041ba08b5937b030c187c8dc94832bc325a5b55.png" /></a></td>
+<td><a href="../pages/爱的拼图背包.html">爱的拼图背包</a></td>
+<td>* 增加4格背包槽位。 * 背包内物品的生命<a href="../pages/恢复.html">恢复</a>效果加强20%。 * <strong>战斗开始时：</strong>获得7点最大生命值。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 231: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/普通.html">普通</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 232: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/生命护符.html" title="生命护符"><img alt="Image 233: AmuletofLife.png" src="../assets/images/ec1c999711ef264c0c721efa05c3533dbdd237411337ba4ea2663905d068463b.png" /></a></td>
+<td><a href="../pages/生命护符.html">生命护符</a></td>
+<td>* <strong>战斗开始时：</strong>获得20点生命值上限。 * 你的<a href="../pages/Heal.html">恢复</a>效果增强20%。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 234: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 235: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/生命魔药.html" title="生命魔药"><img alt="Image 236: HealthPotion.png" src="../assets/images/06616bb13f9e70d32a034f9bcb4259c5fde2f7095171a6471b4749c44856849b.png" /></a></td>
+<td><a href="../pages/生命魔药.html">生命魔药</a></td>
+<td><strong>当你的生命值低于50%时：</strong>消耗此魔药，<a href="../pages/恢复.html">恢复</a>12点生命值并<a href="../pages/净化.html">净化</a>4层<a href="../pages/中毒.html" title="中毒"><img alt="Image 237: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 238: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>4<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 239: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/瘟疫烧瓶.html" title="瘟疫烧瓶"><img alt="Image 240: PestilenceFlask.png" src="../assets/images/e854227f85fe81bea72e335db3ffd120980110cc1803657dc0a7974aaed39340.png" /></a></td>
+<td><a href="../pages/瘟疫烧瓶.html">瘟疫烧瓶</a></td>
+<td>* <strong>当你的对手<a href="../pages/恢复.html">恢复</a>生命值时：</strong>消耗此魔药，向对手施加3层<a href="../pages/中毒.html" title="中毒"><img alt="Image 241: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>的同时，对自己也施加1层<a href="../pages/中毒.html" title="中毒"><img alt="Image 242: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 243: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>7<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 244: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/白色主教.html" title="白色主教"><img alt="Image 245: WhiteBishop.png" src="../assets/images/34e0849a6665187ba890312fe307b332506fb73d8b81f08cc0e1d0d3567b18c9.png" /></a></td>
+<td><a href="../pages/白色主教.html">白色主教</a></td>
+<td>* <strong>吃掉其他棋子时：</strong><a href="../pages/净化.html">净化</a>10层<a href="../pages/减益效果.html">减益效果</a>。 * <strong>被吃掉时：</strong>生命<a href="../pages/恢复.html">恢复</a>效果增加25%。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 246: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>3<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 247: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/紫水晶.html" title="紫水晶"><img alt="Image 248: BPB Amethyst Line.png" src="../assets/images/cf54427fd7e873ed4d44481d73e10450ea843461b4a316a9a608279b4578a401.png" /></a></td>
+<td><a href="../pages/紫水晶.html">紫水晶</a></td>
+<td>放入武器槽： <strong>击中对手：</strong> 将有25/35/50/75/100% 的几率移除对手2个随机增益效果。 放入护甲或其他槽： 对手的生命值<a href="../pages/恢复.html">恢复</a>效果降低12/18/25/30/45%。 放入背包： <strong>每3.2/2.5/2/1.6/1s：</strong><a href="../pages/净化.html">净化</a>自身1个随机减益效果。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 249: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/Varies.html">Varies</a></td>
+<td>1/2/4/8/16<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 250: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/红宝石.html" title="红宝石"><img alt="Image 251: BPB Ruby Line.png" src="../assets/images/17f3a3b02babd6061f1c215b969372448e92f074c41f33cf183ee57903cbf54a.png" /></a></td>
+<td><a href="../pages/红宝石.html">红宝石</a></td>
+<td>放入武器槽： <strong>击中对手：</strong>偷取造成伤害量的7/10/15/20/35%为生命值。 放入护甲或其他槽： 生命值<a href="../pages/Heal.html">恢复效果</a>增强10/15/20/25/40%。 放入背包： <strong>5s后：</strong>造成带有150%生命偷取效果的4/6/10/15/35点<a href="../pages/效果.html" title="效果"><img alt="Image 252: 效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" /></a>伤害。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 253: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/Varies.html">Varies</a></td>
+<td>1/2/4/8/16<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 254: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/红辣椒.html" title="红辣椒"><img alt="Image 255: ChiliPepper.png" src="../assets/images/d3d5cc6f2474539b42821ddebcf11d4526ab628af322aa7d16047d623130c2e9.png" /></a></td>
+<td><a href="../pages/红辣椒.html">红辣椒</a></td>
+<td>* <strong>每4.5s：</strong>获得1层<a href="../pages/狂热.html" title="狂热"><img alt="Image 256: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>并<a href="../pages/恢复.html">恢复</a>5点生命值。当你至少有10层<a href="../pages/狂热.html" title="狂热"><img alt="Image 257: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>时，还会<a href="../pages/净化.html">净化</a>1层<a href="../pages/减益效果.html">减益效果</a>。</td>
+<td><a href="../pages/火焰魔导士.html" title="火焰魔导士"><img alt="Image 258: 火焰魔导士" src="../assets/images/f6171448008368e0edfd37b6348c7a57e92a33e21d415b9ca472c6cbf6a3aa76.png" /></a> <a href="../pages/火焰魔导士.html">火焰魔导士</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 259: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/腐败头盔.html" title="腐败头盔"><img alt="Image 260: CapofDiscomfort.png" src="../assets/images/ab68eb95db1783f6cca958a5c3652957da5e428d107e1bbf2582919532c7ff34.png" /></a></td>
+<td><a href="../pages/腐败头盔.html">腐败头盔</a></td>
+<td>* <strong>战斗开始时：</strong>5s内受到的伤害减少25%。 * <strong>对手获得增益效果时：</strong>有15%的几率使增益<a href="../pages/无效.html">无效</a>。 * 对手的生命<a href="../pages/恢复.html">恢复</a>效果减弱30%。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 261: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>14<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 262: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/致死蘑菇.html" title="致死蘑菇"><img alt="Image 263: DoomCap.png" src="../assets/images/07834ea436262c3cee9116bb032cbf9b35d81ac9a37f1d9832fb48d36ab6cec7.png" /></a></td>
+<td><a href="../pages/致死蘑菇.html">致死蘑菇</a></td>
+<td><strong>每2.9s：</strong>向对手施加3层<a href="../pages/中毒.html" title="中毒"><img alt="Image 264: 中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" /></a>并让对手的生命<a href="../pages/恢复.html">恢复</a>效果削弱10%。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 265: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 266: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/菠萝.html" title="菠萝"><img alt="Image 267: Pineapple.png" src="../assets/images/1ca0b1cca92db2fde6c3cd5637df7d8ea8b6def7b6f667f80f40d3bbdbe3d87c.png" /></a></td>
+<td><a href="../pages/菠萝.html">菠萝</a></td>
+<td><strong>每3.3s：</strong>获得1层<a href="../pages/尖刺.html" title="尖刺"><img alt="Image 268: Spikes" src="../assets/images/23bd118f23fe8f83e140e0e65ef5ad50c5ed726bab7e5777e31776c4587296d7.png" /></a>并<a href="../pages/恢复.html">恢复</a>4点生命值。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 269: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 270: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/藤条编织篮.html" title="藤条编织篮"><img alt="Image 271: VineweaveBasket.png" src="../assets/images/ecd5daa8f60f2813bd0ed8337064ccbed901250085c3cebf9d09aebb81eeab84.png" /></a></td>
+<td><a href="../pages/藤条编织篮.html">藤条编织篮</a></td>
+<td>* 增加9背包槽位。 * 你的<a href="../pages/恢复.html">恢复</a>效果增强10%（篮子内每有一个<a href="../pages/自然.html" title="自然"><img alt="Image 272: 自然" src="../assets/images/0a224b7244ccbadc8a468c4bdea14de71626c44f58dc76c7400fc571d9be96fa.png" /></a>物品，获得5%增强）。 * 在第1和第10回合，商店打折几率增加20%。</td>
+<td><a href="../pages/游侠.html" title="游侠"><img alt="Image 273: 游侠" src="../assets/images/ffeac63a1723b8a99e8fddbbd648eb025802b11f663f270d0d15687db9740839.png" /></a> <a href="../pages/游侠.html">游侠</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>20<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 274: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/蟾蜍.html" title="蟾蜍"><img alt="Image 275: Toad.png" src="../assets/images/b825d786cd02b39a3407a90a3b5f382e9b644c469a683bb362a9b6dc83683625.png" /></a></td>
+<td><a href="../pages/蟾蜍.html">蟾蜍</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 276: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品获得10层<a href="../pages/增益效果.html">增益效果</a>时：</strong><a href="../pages/恢复.html">恢复</a>12点生命。 * <strong><a href="../pages/星星.html" title="星星"><img alt="Image 277: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品消耗掉10层<a href="../pages/增益效果.html">增益效果</a>时：</strong>获得1点<a href="../pages/幸运.html" title="幸运"><img alt="Image 278: Luck" src="../assets/images/1b6e57002dccd2aa7c95dd103f4b25af58e02d7dca2a1778084e254b89733e2f.png" /></a>和1层<a href="../pages/魔法.html" title="魔法"><img alt="Image 279: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。 * <strong>每3.8s：</strong>获得1点<a href="../pages/幸运.html" title="幸运"><img alt="Image 280: Luck" src="../assets/images/1b6e57002dccd2aa7c95dd103f4b25af58e02d7dca2a1778084e254b89733e2f.png" /></a>和1层<a href="../pages/魔法.html" title="魔法"><img alt="Image 281: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。</td>
+<td><a href="../pages/收割者.html" title="收割者"><img alt="Image 282: 收割者" src="../assets/images/30e723a36e34b7df2f2db23190c43d3ec1acb5a077d0e838b464b8c45a34db48.png" /></a> <a href="../pages/收割者.html">收割者</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 283: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/贝壳图腾.html" title="贝壳图腾"><img alt="Image 284: ShellTotem.png" src="../assets/images/ac03dfba5d0271a8d8fb0ed581a5f4f2212a2178dfcc8033a5d06c3fe318f0bd.png" /></a></td>
+<td><a href="../pages/贝壳图腾.html">贝壳图腾</a></td>
+<td>* <strong>每3.6s：</strong>如果你的生命值高于70%，获得1层<a href="../pages/充能.html" title="充能"><img alt="Image 285: Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" /></a>。否则将会<a href="../pages/恢复.html">恢复</a>生命值8点。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 286: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/神圣.html" title="神圣"><img alt="Image 287: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>物品，耐力值消耗-15%。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 288: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 289: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/辉耀王冠.html" title="辉耀王冠"><img alt="Image 290: GlowingCrown.png" src="../assets/images/d1f4642bc2de68659ba31586c2e2b6dea2fe9b124c1512790b3dfee4b7318212.png" /></a></td>
+<td><a href="../pages/辉耀王冠.html">辉耀王冠</a></td>
+<td>* <strong>每2.4s：</strong><a href="../pages/净化.html">净化</a>1层<a href="../pages/致盲.html" title="致盲"><img alt="Image 291: Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" /></a>并<a href="../pages/恢复.html">恢复</a>5点生命值。 * <strong>消耗10点<a href="../pages/魔法.html" title="魔法"><img alt="Image 292: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>：</strong>变为<a href="../pages/无敌.html">无敌</a>，持续2s（单次触发）。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 293: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>12<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 294: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/辣椒黏黏.html" title="辣椒黏黏"><img alt="Image 295: ChiliGoobert.png" src="../assets/images/5710e131240e7843f6aa2298b9a792cd799e679cf5afc44cdf60750a2f8b73ad.png" /></a></td>
+<td><a href="../pages/辣椒黏黏.html">辣椒黏黏</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 296: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到6次：</strong><a href="../pages/恢复.html">恢复</a>15点生命值并获得2层<a href="../pages/狂热.html" title="狂热"><img alt="Image 297: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>。</td>
+<td><a href="../pages/火焰魔导士.html" title="火焰魔导士"><img alt="Image 298: 火焰魔导士" src="../assets/images/f6171448008368e0edfd37b6348c7a57e92a33e21d415b9ca472c6cbf6a3aa76.png" /></a> <a href="../pages/火焰魔导士.html">火焰魔导士</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>11<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 299: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/锁链鞭.html" title="锁链鞭"><img alt="Image 300: ChainWhip.png" src="../assets/images/60009fc8be7b2e038d4bc196ce610f23599f4e5dd63aea5562f6f2ed42bb29bd.png" /></a></td>
+<td><a href="../pages/锁链鞭.html">锁链鞭</a></td>
+<td>* 每移除对手身上一层增益效果，造成的伤害+1. * <strong>击中对手时：</strong>移除对手2层随机<a href="../pages/增益效果.html">增益效果</a>。 * 在<a href="../pages/狂战士之怒.html">狂战士之怒</a>期间额外获得10生命<a href="../pages/恢复.html">恢复</a>。</td>
+<td><a href="../pages/狂战士.html" title="狂战士"><img alt="Image 301: 狂战士" src="../assets/images/927574be4ac9023b55eb25dc48946ecb0d788c2fcb313907c0546df013276548.png" /></a> <a href="../pages/狂战士.html">狂战士</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>8<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 302: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/闪光蜗牛壳.html" title="闪光蜗牛壳"><img alt="Image 303: ShinyShell.png" src="../assets/images/9ae0580d7f4dbbbf568c8368f5b3895388eedcd799ca97140d76d3865dadf3d2.png" /></a></td>
+<td><a href="../pages/闪光蜗牛壳.html">闪光蜗牛壳</a></td>
+<td><strong>5秒后：</strong><a href="../pages/Heal.html">恢复</a>生命5点（每个<a href="../pages/星星.html" title="星星"><img alt="Image 304: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/神圣.html" title="神圣"><img alt="Image 305: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>物品增加3点）。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 306: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/普通.html">普通</a></td>
+<td>2<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 307: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/香蕉.html" title="香蕉"><img alt="Image 308: Banana.png" src="../assets/images/008c1c24e2f18de0e4c43196b827cda6bfbcde9188bf44a236dde453a70132c8.png" /></a></td>
+<td><a href="../pages/香蕉.html">香蕉</a></td>
+<td><strong>每5s：</strong><a href="../pages/恢复.html">恢复</a>4点生命和1点<a href="../pages/耐力.html">耐力</a>。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 309: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/普通.html">普通</a></td>
+<td>3<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 310: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/骷髅蒂姆.html" title="骷髅蒂姆"><img alt="Image 311: Tim.png" src="../assets/images/bfcf22ffb5acb9fef62bc94ebfeca4125a92cc742ba6059ed969f5c92fb1f76f.png" /></a></td>
+<td><a href="../pages/骷髅蒂姆.html">骷髅蒂姆</a></td>
+<td>放入武器槽： <strong>击中对手时：</strong>有+50%的几率偷取一个随机<a href="../pages/增益效果.html">增益效果</a>。 放入护甲或其他槽： 有25%的几率抵御暴击或<a href="../pages/减益效果.html">减益效果</a>。 放入背包： <strong>对手生命值低于30%时：</strong><a href="../pages/恢复.html">恢复</a>50点生命值，获得5层<a href="../pages/充能.html" title="充能"><img alt="Image 312: Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" /></a>。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 313: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 314: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/魔法卷轴：净化祝福.html" title="魔法卷轴：净化祝福"><img alt="Image 315: LightScroll.png" src="../assets/images/86855cffe75c4de7b6ce55e0928bfc1b6e59ca70f758fd6e68afd8c85c24fb26.png" /></a></td>
+<td><a href="../pages/魔法卷轴：净化祝福.html">魔法卷轴：净化祝福</a></td>
+<td>* <strong>每2.4s：</strong><a href="../pages/净化.html">净化</a>一层<a href="../pages/减益效果.html">减益效果</a>。如果你没有<a href="../pages/减益效果.html">减益效果</a>，则<a href="../pages/恢复.html">恢复</a>8点生命值。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 316: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/神圣.html" title="神圣"><img alt="Image 317: 神圣" src="../assets/images/0ad6b2dfa64f3b9b2ca73596ffb7bc8e1a1ab35175123a81eac7fcfa5651ab73.png" /></a>物品，卷轴的触发速度快10%。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 318: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/史诗.html">史诗</a></td>
+<td>5<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 319: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/魔法杯糕.html" title="魔法杯糕"><img alt="Image 320: Cupcake.png" src="../assets/images/425bc44e51e5f0b1822790f1f10314b77a41f48d586b97fa0de2a4abb32b228b.png" /></a></td>
+<td><a href="../pages/魔法杯糕.html">魔法杯糕</a></td>
+<td>* <strong>每6s：</strong><a href="../pages/恢复.html">恢复</a>10点生命值并获得2层你现有层数最多的<a href="../pages/增益效果.html">增益效果</a>。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 321: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 322: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/魔法杯糕黏黏.html" title="魔法杯糕黏黏"><img alt="Image 323: CupcakeGoobert.png" src="../assets/images/c84e4a85431f867bc12b05c97c8f31c42ba2a7baef095ef54983a3dd29c18776.png" /></a></td>
+<td><a href="../pages/魔法杯糕黏黏.html">魔法杯糕黏黏</a></td>
+<td><a href="../pages/星星.html" title="星星"><img alt="Image 324: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到6次：<a href="../pages/恢复.html">恢复</a>30点生命值并获得2层你现有层数最多的<a href="../pages/增益效果.html">增益效果</a>。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 325: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/传说.html">传说</a></td>
+<td>12<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 326: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/鹿木守护.html" title="鹿木守护"><img alt="Image 327: DeerwoodGuardian.png" src="../assets/images/9196a936b24bc1745cdeba8dfb49d155f874a1f2574e99c61bd161e49cdcd6a5.png" /></a></td>
+<td><a href="../pages/鹿木守护.html">鹿木守护</a></td>
+<td>* 受到的伤害减少15%。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 328: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/自然.html" title="自然"><img alt="Image 329: 自然" src="../assets/images/0a224b7244ccbadc8a468c4bdea14de71626c44f58dc76c7400fc571d9be96fa.png" /></a>物品，<a href="../pages/狂战士之怒.html">狂战士之怒</a>持续时间加长0.8s。 * <strong><a href="../pages/狂战士之怒.html">狂战士之怒</a>期间每1s：</strong><a href="../pages/恢复.html">恢复</a>8点生命值并获得3点<a href="../pages/魔法.html" title="魔法"><img alt="Image 330: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>。</td>
+<td><a href="../pages/狂战士.html" title="狂战士"><img alt="Image 331: 狂战士" src="../assets/images/927574be4ac9023b55eb25dc48946ecb0d788c2fcb313907c0546df013276548.png" /></a> <a href="../pages/狂战士.html">狂战士</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 332: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/黏宝宝.html" title="黏宝宝"><img alt="Image 333: Goobling.png" src="../assets/images/f0c7e54e74efadad7605c2377cf90b2719ca54735803623eae4576fc2c551ac3.png" /></a></td>
+<td><a href="../pages/黏宝宝.html">黏宝宝</a></td>
+<td><strong><a href="../pages/星星.html" title="星星"><img alt="Image 334: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活3次时：</strong><a href="../pages/恢复.html">恢复</a>4点生命值。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 335: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/普通.html">普通</a></td>
+<td>2<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 336: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/黏黏.html" title="黏黏"><img alt="Image 337: Goobert.png" src="../assets/images/78cafb13b199948730aecd368db80a15e0cf7dda5b0f8fa645cdceff3c0d5065.png" /></a></td>
+<td><a href="../pages/黏黏.html">黏黏</a></td>
+<td>* <strong><a href="../pages/星星.html" title="星星"><img alt="Image 338: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活达到5次：</strong><a href="../pages/恢复.html">恢复</a>9点生命值。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 339: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>6<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 340: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/黏黏龙骑士.html" title="黏黏龙骑士"><img alt="Image 341: DragonKnight.png" src="../assets/images/ab5df3da979ad308efa8ba389e0b5142fdee1e3daf04a443c280adb38e4873d4.png" /></a></td>
+<td><a href="../pages/黏黏龙骑士.html">黏黏龙骑士</a></td>
+<td>* <strong>战斗开始时：</strong>获得5层<a href="../pages/狂热.html" title="狂热"><img alt="Image 342: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>。<a href="../pages/反弹.html">反弹</a>4层减益效果。 * <strong>击中对手：</strong><a href="../pages/恢复.html">恢复</a>生命值10点。 * <strong><a href="../pages/星星.html" title="星星"><img alt="Image 343: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的物品激活时：</strong>快进15%冷却时间。</td>
+<td><a href="../pages/冒险家.html" title="冒险家"><img alt="Image 344: 冒险家" src="../assets/images/d98d868049b997c6358f020b6043e88422e35622e5e7aa490f79d6a135680b9a.png" /></a> <a href="../pages/冒险家.html">冒险家</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>18<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 345: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/黑暗心之容器.html" title="黑暗心之容器"><img alt="Image 346: HeartofDarkness.png" src="../assets/images/1a0af64e821e8de9f760d3dc0c6880c2569ceaf132eb6f3b4329e1dab1a91159.png" /></a></td>
+<td><a href="../pages/黑暗心之容器.html">黑暗心之容器</a></td>
+<td>* <strong>每4s：</strong>偷取2层<a href="../pages/增益效果.html">增益效果</a>，优先偷取<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 347: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>。 * 每有一个<a href="../pages/星星.html" title="星星"><img alt="Image 348: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/黑暗.html" title="黑暗"><img alt="Image 349: 黑暗" src="../assets/images/78db464bd31a03fd90a32948329dba852e38b127115ccbb60a9db7266d1bdf6c.png" /></a>物品，效果触发快20%。 * <strong>消耗7层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 350: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>：</strong>获得100点最大生命值，还有4层<a href="../pages/充能.html" title="充能"><img alt="Image 351: Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" /></a>，并且你的对手<a href="../pages/Heal.html">生命恢复</a>效果减低40%（单次触发）。</td>
+<td><a href="../pages/通用.html" title="通用"><img alt="Image 352: 通用" src="../assets/images/4e1ebbb9b6283c6bf1d4da71a7c1b8629b7cf0dfba4bf712492225e1437dc441.png" /></a> <a href="../pages/通用.html">通用</a></td>
+<td><a href="../pages/神级.html">神级</a></td>
+<td>19<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 353: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/黑色主教.html" title="黑色主教"><img alt="Image 354: BlackBishop.png" src="../assets/images/6ab1df780f28021202b7e9c903cc2d0ee74a9a7b21a3ed4bdf68ad82ac19c0b7.png" /></a></td>
+<td><a href="../pages/黑色主教.html">黑色主教</a></td>
+<td>* <strong>吃掉其他棋子时：</strong>向对手施加5层随机<a href="../pages/减益效果.html">减益效果</a>。 * <strong>被吃掉时：</strong>削弱对手20%的生命<a href="../pages/恢复.html">恢复</a>效果，还会削弱20%获得的最大生命值。</td>
+<td><a href="../pages/魔法师.html" title="魔法师"><img alt="Image 355: 魔法师" src="../assets/images/49f249c22755b012379c2b4b85a050283caa0b2f0d3bf8fa4a47aa297d3724b7.png" /></a> <a href="../pages/魔法师.html">魔法师</a></td>
+<td><a href="../pages/罕见.html">罕见</a></td>
+<td>3<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 356: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+<tr>
+<td><a href="../pages/龙的巢穴.html" title="龙的巢穴"><img alt="Image 357: DragonNest.png" src="../assets/images/7db44b571836ec79f0d8e893c1befced57c46039620ee1a8a16437872e1a8004.png" /></a></td>
+<td><a href="../pages/龙的巢穴.html">龙的巢穴</a></td>
+<td>* <strong>战斗开始时：</strong>获得4点<a href="../pages/幸运.html" title="幸运"><img alt="Image 358: Luck" src="../assets/images/1b6e57002dccd2aa7c95dd103f4b25af58e02d7dca2a1778084e254b89733e2f.png" /></a>，4层<a href="../pages/恢复（增益效果）.html" title="恢复（增益效果）"><img alt="Image 359: Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" /></a>，4点<a href="../pages/魔法.html" title="魔法"><img alt="Image 360: 魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" /></a>，还有4层<a href="../pages/狂热.html" title="狂热"><img alt="Image 361: Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" /></a>。 * <strong><a href="../pages/星星.html" title="星星"><img alt="Image 362: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的<a href="../pages/龙.html">龙</a>攻击时：</strong><a href="../pages/恢复.html">恢复</a>7点生命值。 * <a href="../pages/星星.html" title="星星"><img alt="Image 363: Star" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" /></a>的龙蛋只需1回合即可孵化。 * 商店会出售更多的龙蛋。</td>
+<td><a href="../pages/火焰魔导士.html" title="火焰魔导士"><img alt="Image 364: 火焰魔导士" src="../assets/images/f6171448008368e0edfd37b6348c7a57e92a33e21d415b9ca472c6cbf6a3aa76.png" /></a> <a href="../pages/火焰魔导士.html">火焰魔导士</a></td>
+<td><a href="../pages/特别.html">特别</a></td>
+<td>10<a href="../pages/游戏机制.html" title="游戏机制"><img alt="Image 365: 金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" /></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><a href="#">v</a> · <a href="#">d</a> · <a href="#">e</a> <a href="../pages/游戏机制.html">游戏机制</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>物品栏和商店</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>战斗</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><a href="../pages/增益效果.html">增益效果</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><a href="../pages/减益效果.html">减益效果</a></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>其他</td>
+</tr>
+</tbody>
+</table>
+      </main>
+    </div>
+    <footer class="site-footer">离线版本，仅供本地阅读。</footer>
+  </body>
+</html>

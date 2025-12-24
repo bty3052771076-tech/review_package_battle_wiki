@@ -1,0 +1,133 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f6f1;
+  --panel: #ffffff;
+  --ink: #221a14;
+  --muted: #7a6a5f;
+  --accent: #9b3b2f;
+  --line: #e1d6c9;
+  --shadow: 0 12px 30px rgba(34, 26, 20, 0.08);
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Noto Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(circle at top, #fbf7f0 0%, #f4efe6 45%, #ece4d6 100%);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  padding: 28px clamp(16px, 4vw, 48px);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif", "STSong", serif;
+  font-size: clamp(22px, 3vw, 32px);
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: clamp(16px, 4vw, 36px);
+  padding: clamp(16px, 4vw, 48px);
+}
+
+.sidebar {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  align-self: start;
+  position: sticky;
+  top: 110px;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.content {
+  background: var(--panel);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 4vw, 40px);
+  border: 1px solid var(--line);
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif", "STSong", serif;
+  color: #2c2219;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.content th,
+.content td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.site-footer {
+  padding: 16px clamp(16px, 4vw, 48px) 32px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+}

@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>闪电</title>
+    <link rel="stylesheet" href="../assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Backpack Battles 中文 Wiki</h1>
+    </header>
+    <div class="layout">
+      <nav class="sidebar">
+        <h2>导航</h2>
+        <ul>
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../all-pages.html">全站索引</a></li>
+          <li><a href="../search.html">搜索</a></li>
+        </ul>
+        <p style="margin-top:16px; color: var(--muted); font-size: 13px;">共 812 页</p>
+      </nav>
+      <main class="content">
+        <!-- source: action=render -->
+
+<div class="mw-content-ltr mw-parser-output" lang="zh-Hans-CN" dir="ltr"><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none"><div class="toctitle" lang="zh-Hans-CN" dir="ltr"><h2 id="mw-toc-heading">目录</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#物品栏机制"><span class="tocnumber">1</span> <span class="toctext">物品栏机制</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#合成"><span class="tocnumber">1.1</span> <span class="toctext">合成</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="#商店机制"><span class="tocnumber">2</span> <span class="toctext">商店机制</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#刷新商店"><span class="tocnumber">2.1</span> <span class="toctext">刷新商店</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#出现概率"><span class="tocnumber">2.2</span> <span class="toctext">出现概率</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#宝藏"><span class="tocnumber">2.3</span> <span class="toctext">宝藏</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#打折"><span class="tocnumber">2.4</span> <span class="toctext">打折</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#交易"><span class="tocnumber">2.5</span> <span class="toctext">交易</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#战斗机制"><span class="tocnumber">3</span> <span class="toctext">战斗机制</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#物品互动与激活"><span class="tocnumber">3.1</span> <span class="toctext">物品互动与激活</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#攻击"><span class="tocnumber">3.2</span> <span class="toctext">攻击</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#增益效果"><span class="tocnumber">3.3</span> <span class="toctext">增益效果</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#减益效果"><span class="tocnumber">3.4</span> <span class="toctext">减益效果</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#其他"><span class="tocnumber">3.5</span> <span class="toctext">其他</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#主客场机制"><span class="tocnumber">3.6</span> <span class="toctext">主客场机制</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#战斗日志"><span class="tocnumber">3.7</span> <span class="toctext">战斗日志</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#游戏胜负"><span class="tocnumber">4</span> <span class="toctext">游戏胜负</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#游戏模式"><span class="tocnumber">5</span> <span class="toctext">游戏模式</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#排名游戏"><span class="tocnumber">5.1</span> <span class="toctext">排名游戏</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#休闲游戏"><span class="tocnumber">5.2</span> <span class="toctext">休闲游戏</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#其他游戏模式"><span class="tocnumber">5.3</span> <span class="toctext">其他游戏模式</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span id=".E7.89.A9.E5.93.81.E6.A0.8F.E6.9C.BA.E5.88.B6"></span><span class="mw-headline" id="物品栏机制">物品栏机制</span></h2>
+<div role="note" class="notice hatnote context-link main dablink">主条目：<a href="../pages/%E7%89%A9%E5%93%81%E6%A0%8F.html" title="物品栏">物品栏</a></div>
+<p>每局开始都会获得12-14<a href="../pages/%E8%83%8C%E5%8C%85.html" title="背包">背包</a>格，视不同<a href="../pages/%E8%A7%92%E8%89%B2.html" title="角色">角色</a>的开局配置（上限为7乘9共63格），这些背包可以重新排列/旋转/放置物品。商店会出售各种背包，让你解锁更多背包格。每种物品都有自己的格子占用/特殊效果/<a href="../pages/%E6%98%9F%E6%98%9F.html" title="星星"><img alt="星星" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="50" data-file-height="50"></a>/<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="钻石" src="../assets/images/55db09d55adbc23fc734c415598406c7fb1ef55265846df001d69a3af042ad96.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="50" data-file-height="50"></a>，可以在提示信息里面找到，在摆放物品时应考虑到它们。
+</p><p>物品可以放置在储物柜中，放在储物箱中效果将不会生效。这样的物品例如：<a href="../pages/%E5%AD%98%E9%92%B1%E7%BD%90.html" title="存钱罐">存钱罐</a>不会产生金币，<a href="../pages/%E8%90%A8%E6%BB%A1%E9%9D%A2%E5%85%B7.html" title="萨满面具">萨满面具</a>商店中不会刷新符文。<a href="../pages/%E7%9F%B3%E5%A4%B4%E5%BE%BD%E7%AB%A0.html" title="石头徽章">石头徽章</a>是例外，即使放在储物箱里面商店仍然不会刷新职业专属物品。
+</p>
+<h3><span id=".E5.90.88.E6.88.90"></span><span class="mw-headline" id="合成">合成</span></h3>
+<div role="note" class="notice hatnote context-link main dablink">主条目：<a href="../pages/%E5%90%88%E6%88%90%E9%85%8D%E6%96%B9.html" title="合成配方">合成配方</a></div>
+<p><a href="../pages/%E5%90%88%E6%88%90.html" class="mw-redirect" title="合成">合成</a>是游戏中核心的机制，可以在合成库或者物品图鉴查看合成配方，或者在商店页面将鼠标放在物品上单击Alt/双击Alt键查看配方，可合成的物品鼠标悬停时也会显示蓝色的链接。
+</p><p>合成物品必须将配方中的物品放置在背包中且相邻，在下次进入商店时合成为新物品。镶嵌的<a href="../pages/%E5%AE%9D%E7%9F%B3.html" title="宝石">宝石</a>在相邻物品的镶嵌位也视为相邻。多个物品的合成需要第一个配方与所有其它配方相邻，不要求各自都相邻。
+</p><p>合成有两种形式：
+</p><p>第一种是几种物品合成为新物品，原有的物品消失，合成特效为黄色；
+</p><p>第二种是一种物品作为媒介催化的作用本身不消失（例如<a href="../pages/%E9%94%BB%E9%80%A0%E9%94%A4.html" title="锻造锤">锻造锤</a>），另一个物品升级成新的物品。在合成配方中不会消耗的物品文字会有绿色底，合成特效也为绿色。
+</p><p>你可以随时右键物品锁定防止物品被合成。用<a href="../pages/%E9%94%A4%E5%AD%90.html" title="锤子">锤子</a>敲碎<a href="../pages/%E5%AD%98%E9%92%B1%E7%BD%90.html" title="存钱罐">存钱罐</a>，<a href="../pages/%E7%8C%AE%E7%A5%AD%E4%B9%8B%E7%A2%97.html" title="献祭之碗">献祭之碗</a>和<a href="../pages/%E4%B8%8D%E7%A8%B3%E5%AE%9A%E9%87%8D%E7%BB%84%E5%99%A8.html" title="不稳定重组器">不稳定重组器</a>的分解属于合成，也可以通过锁定保留想要的物品。再次右键可解锁。
+</p>
+<h2><span id=".E5.95.86.E5.BA.97.E6.9C.BA.E5.88.B6"></span><span class="mw-headline" id="商店机制">商店机制</span></h2>
+<p>将物品从库存或仓库拖到店主的箱子中出售，或从商店拖到库存或仓库中购买。右键单击物品可将其锁定为 "保留"，以防止手动或在下一轮开始时重新刷新。
+</p><p>玩家会以13<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>金币和25点生命值开始游戏，并在每轮开始时获得额外的金币和生命值：
+开始游戏后，每结束回合，你就会进入商店（除了游戏结束外，你将返回开始画面）。每次进入商店都会获得一定数量的金币，具体数量取决于你所处的回合以及背包中<a href="../pages/%E5%AD%98%E9%92%B1%E7%BD%90.html" title="存钱罐">存钱罐</a>或<a href="../pages/%E5%B9%B8%E8%BF%90%E5%AD%98%E9%92%B1%E7%BD%90.html" title="幸运存钱罐">幸运存钱罐</a>的数量。此外，剩余的金币会留到下一回合。
+</p>
+<table class="styled">
+<caption>每回合获得的金币以及生命值
+</caption>
+<tbody><tr>
+<th>回合
+</th>
+<th>1
+</th>
+<th>2
+</th>
+<th>3*
+</th>
+<th>4
+</th>
+<th>5
+</th>
+<th>6
+</th>
+<th>7
+</th>
+<th>8*
+</th>
+<th>9
+</th>
+<th>10*
+</th>
+<th>11
+</th>
+<th>12
+</th>
+<th>13
+</th>
+<th>14
+</th>
+<th>15
+</th>
+<th>16
+</th>
+<th>17
+</th>
+<th>18
+</th></tr>
+<tr>
+<td><a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>金币
+</td>
+<td>13
+</td>
+<td>13
+</td>
+<td>15
+</td>
+<td>10
+</td>
+<td>11
+</td>
+<td>11
+</td>
+<td>12
+</td>
+<td>22
+</td>
+<td>13
+</td>
+<td>18
+</td>
+<td>14
+</td>
+<td>14
+</td>
+<td>15
+</td>
+<td>15
+</td>
+<td>16
+</td>
+<td>16
+</td>
+<td>16
+</td>
+<td>16
+</td></tr>
+<tr>
+<td>生命值
+</td>
+<td>25
+</td>
+<td>35
+</td>
+<td>45
+</td>
+<td>55
+</td>
+<td>70
+</td>
+<td>85
+</td>
+<td>100
+</td>
+<td>115
+</td>
+<td>130
+</td>
+<td>150
+</td>
+<td>170
+</td>
+<td>190
+</td>
+<td>210
+</td>
+<td>230
+</td>
+<td>260
+</td>
+<td>290
+</td>
+<td>320
+</td>
+<td>350
+</td></tr></tbody></table>
+<ul><li>第3/10回合的额外5<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>属于特殊情况，额外的金币可用于购买<a href="../pages/%E6%8A%80%E8%83%BD.html" title="技能">技能</a>物品。</li>
+<li>第8回合的额外10<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>属于特殊情况，额外的金币可用于购买<a href="../pages/%E5%AD%90%E8%81%8C%E4%B8%9A.html" title="子职业">子职业</a>物品。</li>
+<li>购买子职业物品（例如<a href="../pages/%E4%B8%80%E7%A2%97%E9%9B%B6%E9%A3%9F.html" title="一碗零食">一碗零食</a>、<a href="../pages/%E6%B0%B8%E5%86%BB%E4%B9%8B%E7%81%AB.html" title="永冻之火">永冻之火</a>、<a href="../pages/%E8%90%A8%E6%BB%A1%E9%9D%A2%E5%85%B7.html" title="萨满面具">萨满面具</a>会在商店中刷新专属物品这种副职业物品）直接放在背包里，商店会必定刷出来一个副职业道具专属的物品。</li>
+<li>有每10件物品必定出现一个<a href="../pages/%E8%83%8C%E5%8C%85.html" title="背包">背包</a>的保底。</li></ul>
+<h3><span id=".E5.88.B7.E6.96.B0.E5.95.86.E5.BA.97"></span><span class="mw-headline" id="刷新商店">刷新商店</span></h3>
+<p>在回合开始前，玩家可以用金币在商店里购买物品，商店里有五种物品。进入商店后前四次刷新花费 1 <a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>，之后刷新需要 2 <a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="金币" src="../assets/images/67779dab0545ede84d78a6f2cf1163b5822ba915c1d326f0526619f2b45facc9.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>。
+</p><p>在你购买一个物品后，下次刷新必定不会出现。在你略过一个物品后，2次刷新（前3回合）/3次刷新（4回合及之后）内不会出现。每个回合重置记录。
+</p>
+<h3><span id=".E5.87.BA.E7.8E.B0.E6.A6.82.E7.8E.87"></span><span class="mw-headline" id="出现概率">出现概率</span></h3>
+<div class="floatright"><a href="../pages/File:%E7%A8%80%E6%9C%89%E5%BA%A6%E5%9B%9E%E5%90%88%E6%95%B0.png.html" class="image"><img alt="稀有度回合数.png" src="../assets/images/134ad8f39c341075eacdf1b4117a6419973efcc459631a9e1c461d6f05269e07.png" decoding="async" loading="lazy" width="613" height="439" data-file-width="613" data-file-height="439"></a></div>
+<p>商店中的物品会根据与当前回合相关的设定的<a href="../pages/%E7%A8%80%E6%9C%89%E5%BA%A6.html" title="稀有度">稀有度</a>概率随机出现，当前回合的概率会在商店吊牌上显示：
+</p>
+<table class="styled">
+<caption>每轮可能商店物品出现的几率（%）
+</caption>
+<tbody><tr>
+<th>回合
+</th>
+<th>1
+</th>
+<th>2
+</th>
+<th>3
+</th>
+<th>4
+</th>
+<th>5
+</th>
+<th>6
+</th>
+<th>7
+</th>
+<th>8
+</th>
+<th>9
+</th>
+<th>10
+</th>
+<th>11
+</th>
+<th>12-18
+</th></tr>
+<tr>
+<td><a href="../pages/%E6%99%AE%E9%80%9A.html" title="普通">普通</a>
+</td>
+<td>90
+</td>
+<td>84
+</td>
+<td>75
+</td>
+<td>64
+</td>
+<td>45
+</td>
+<td>29
+</td>
+<td>20
+</td>
+<td>20
+</td>
+<td>20
+</td>
+<td>20
+</td>
+<td>20
+</td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="../pages/%E7%BD%95%E8%A7%81.html" title="罕见">罕见</a>
+</td>
+<td>10
+</td>
+<td>15
+</td>
+<td>20
+</td>
+<td>25
+</td>
+<td>35
+</td>
+<td>40
+</td>
+<td>35
+</td>
+<td>30
+</td>
+<td>28
+</td>
+<td>25
+</td>
+<td>23
+</td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="../pages/%E5%8F%B2%E8%AF%97.html" title="史诗">史诗</a>
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>10
+</td>
+<td>15
+</td>
+<td>20
+</td>
+<td>25
+</td>
+<td>25
+</td>
+<td>25
+</td>
+<td>25
+</td>
+<td>23
+</td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="../pages/%E4%BC%A0%E8%AF%B4.html" title="传说">传说</a>
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>10
+</td>
+<td>15
+</td>
+<td>15
+</td>
+<td>15
+</td>
+<td>15
+</td>
+<td>17
+</td>
+<td>20
+</td></tr>
+<tr>
+<td><a href="../pages/%E7%A5%9E%E7%BA%A7.html" title="神级">神级</a>
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>0
+</td>
+<td>1
+</td>
+<td>5
+</td>
+<td>10
+</td>
+<td>12
+</td>
+<td>15
+</td>
+<td>17
+</td>
+<td>20
+</td></tr></tbody></table>
+<h3><span id=".E5.AE.9D.E8.97.8F"></span><span class="mw-headline" id="宝藏"><a href="../pages/%E5%AE%9D%E8%97%8F.html" title="宝藏">宝藏</a></span></h3>
+<p>进入商店时<a href="../pages/%E5%AE%9D%E8%97%8F.html" title="宝藏"><img alt="宝藏" src="../assets/images/0a72abbfb2e813f1af78798b4e283207438f217390fb44b22550c4fb821217b9.png" decoding="async" loading="lazy" width="20" height="20" data-file-width="55" data-file-height="56"></a>宝藏物品可能会出现，但刷新后不会出现。<a href="../pages/%E5%BE%BD%E7%AB%A0.html" title="徽章">徽章</a>在前三回合也会以20%的几率出现，在第四轮回归正常的7%。其他宝藏从第四轮才开始出现在商店中，有7%的基本几率出现。
+</p>
+<h3><span id=".E6.89.93.E6.8A.98"></span><span class="mw-headline" id="打折">打折</span></h3>
+<p>商店每件物品都有 10% 的几率以 50% 的折扣（四舍五入）出售，这也是每件物品的出售价值。部分物品会提高商店打折几率。有每16件商品必定会出现1个打折物品的保底。
+</p>
+<h3><span id=".E4.BA.A4.E6.98.93"></span><span class="mw-headline" id="交易"><a href="../pages/%E4%BA%A4%E6%98%93.html" title="交易">交易</a></span></h3>
+<p>交易是一种特殊机制，商店老板有几率提出交易将你的一件物品交换为另一件物品。
+</p>
+<h2><span id=".E6.88.98.E6.96.97.E6.9C.BA.E5.88.B6"></span><span class="mw-headline" id="战斗机制">战斗机制</span></h2>
+<h3><span id=".E7.89.A9.E5.93.81.E4.BA.92.E5.8A.A8.E4.B8.8E.E6.BF.80.E6.B4.BB"></span><span class="mw-headline" id="物品互动与激活">物品互动与激活</span></h3>
+<p>许多物品都拥有特殊效果，当它周围的物品触发会激活这些效果。比如<a href="../pages/%E9%A3%9F%E7%89%A9.html" title="食物">食物</a>，<a href="../pages/%E9%92%A2%E4%B9%8B%E9%BB%8F%E9%BB%8F.html" title="钢之黏黏">钢之黏黏</a>和<a href="../pages/%E5%8F%B7%E8%A7%92.html" title="号角">号角</a>。方块<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="钻石" src="../assets/images/55db09d55adbc23fc734c415598406c7fb1ef55265846df001d69a3af042ad96.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="50" data-file-height="50"></a>、三角<a href="../pages/%E6%B8%B8%E6%88%8F%E6%9C%BA%E5%88%B6.html" title="游戏机制"><img alt="三角" src="../assets/images/5f8efd59f414cc159c4afab0b0d29cf0b49944eac51605be96823ea4d98f5445.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="44" data-file-height="42"></a>的机制和星星<a href="../pages/%E6%98%9F%E6%98%9F.html" title="星星"><img alt="星星" src="../assets/images/cf18372b9358662665ded5a202b5768f1bf5a5eae4efff53f6d2f8daa05e8f63.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="50" data-file-height="50"></a>相同，当一个物品拥有两种不同的效果时，为了区分才会使用方片或者三角。当物品为全局效果时，可受其影响的物品会显示八角星形状提示。背包生效的物品时也会在物品上显示背包图标。
+</p><p>通常一个物品最多只能触发另一个物品的一个星星（和一个方块）。对于不生效的位置/物品则会变为虚化的图标。
+</p><p>物品有多种效果的情况下，只有一种主要效果被视为激活，<a href="../pages/%E9%BB%8F%E9%BB%8F.html" title="黏黏">黏黏</a>/<a href="../pages/%E9%AD%94%E6%B3%95%E7%90%83.html" title="魔法球">魔法球</a>/<a href="../pages/%E7%BB%86%E7%BB%B3.html" title="细绳">细绳</a>等判定触发的物品也只会如此判定。如<a href="../pages/%E6%9C%88%E5%85%89%E7%9B%BE.html" title="月光盾">月光盾</a>获得<a href="../pages/%E9%AD%94%E6%B3%95.html" title="魔法"><img alt="魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a>不算激活，<a href="../pages/%E6%A3%8B%E7%9B%98.html" title="棋盘">棋盘</a>只有在棋子吃子的时候才算激活。可以通过<a href="../pages/%E6%88%98%E6%96%97%E6%97%A5%E5%BF%97.html" title="战斗日志">战斗日志</a>查看哪些物品的激活时点。
+</p>
+<h3><span id=".E6.94.BB.E5.87.BB"></span><span class="mw-headline" id="攻击">攻击</span></h3>
+<p><a href="../pages/%E4%BC%A4%E5%AE%B3.html" title="伤害">伤害</a>：武器的伤害一般会在一定范围浮动，其他物品也可以造成伤害。
+</p><p><a href="../pages/%E5%91%BD%E4%B8%AD%E7%8E%87.html" title="命中率">命中率</a>：决定击中还是落空。
+</p><p><a href="../pages/%E5%86%B7%E5%8D%B4.html" title="冷却">冷却</a>：表示物品每次激活之间的时间间隔。
+</p><p><a href="../pages/%E6%9A%B4%E5%87%BB.html" title="暴击">暴击</a>：造成双倍伤害。
+</p><p><a href="../pages/%E8%80%90%E5%8A%9B.html" title="耐力">耐力</a>：武器攻击时消耗的耐力。
+</p>
+<h3><span id=".E5.A2.9E.E7.9B.8A.E6.95.88.E6.9E.9C"></span><span class="mw-headline" id="增益效果"><a href="../pages/%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="增益效果">增益效果</a></span></h3>
+<p><a href="../pages/%E5%B9%B8%E8%BF%90.html" title="幸运"><img alt="Luck" src="../assets/images/1b6e57002dccd2aa7c95dd103f4b25af58e02d7dca2a1778084e254b89733e2f.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E5%B9%B8%E8%BF%90.html" title="幸运">幸运</a>：</b> 每点增加5%命中率。
+</p><p><a href="../pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C%EF%BC%89.html" title="恢复（增益效果）"><img alt="Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C%EF%BC%89.html" title="恢复（增益效果）">恢复</a>：</b>每2秒，每层恢复1点生命值。
+</p><p><a href="../pages/%E5%B0%96%E5%88%BA.html" title="尖刺"><img alt="Spikes" src="../assets/images/23bd118f23fe8f83e140e0e65ef5ad50c5ed726bab7e5777e31776c4587296d7.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E5%B0%96%E5%88%BA.html" title="尖刺">尖刺</a>：</b>当被敌人用<a href="../pages/%E8%BF%91%E6%88%98.html" title="近战"><img alt="近战" src="../assets/images/7e1844ca83fb494317db372c6aee6df1fe281916bce37fc1f19213415df44f7c.png" decoding="async" loading="lazy" width="20" height="20" data-file-width="55" data-file-height="56"></a>武器击中时，每层造成1点伤害。（最高造成100%伤害的量）
+</p><p><a href="../pages/%E5%90%B8%E8%A1%80.html" title="吸血"><img alt="Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E5%90%B8%E8%A1%80.html" title="吸血">吸血</a>：</b>当使用<a href="../pages/%E8%BF%91%E6%88%98.html" title="近战"><img alt="近战" src="../assets/images/7e1844ca83fb494317db372c6aee6df1fe281916bce37fc1f19213415df44f7c.png" decoding="async" loading="lazy" width="20" height="20" data-file-width="55" data-file-height="56"></a>武器击中敌人时，每层恢复1点生命值。（最高恢复100%伤害的量）
+</p><p><a href="../pages/%E9%AD%94%E6%B3%95.html" title="魔法"><img alt="魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E9%AD%94%E6%B3%95.html" title="魔法">魔法</a>：</b><a href="../pages/%E9%AD%94%E6%B3%95%E5%B1%9E%E6%80%A7.html" title="魔法属性"><img alt="魔法属性" src="../assets/images/583b45a218d4aa856806a92ec366863b3a13123aac1d7bbec776638ddf9103a8.png" decoding="async" loading="lazy" width="20" height="20" data-file-width="55" data-file-height="56"></a>物品的消耗物。
+</p><p><a href="../pages/%E7%8B%82%E7%83%AD.html" title="狂热"><img alt="Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="100" data-file-height="95"></a> <b><a href="../pages/%E7%8B%82%E7%83%AD.html" title="狂热">狂热</a>：</b>每层使所有物品触发快2%。
+</p><p><a href="../pages/%E5%85%85%E8%83%BD.html" title="充能"><img alt="Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="100" data-file-height="95"></a> <b><a href="../pages/%E5%85%85%E8%83%BD.html" title="充能">充能</a>：</b>每层增加1点武器伤害。
+</p>
+<h3><span id=".E5.87.8F.E7.9B.8A.E6.95.88.E6.9E.9C"></span><span class="mw-headline" id="减益效果"><a href="../pages/%E5%87%8F%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="减益效果">减益效果</a></span></h3>
+<p><a href="../pages/%E4%B8%AD%E6%AF%92.html" title="中毒"><img alt="中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E4%B8%AD%E6%AF%92.html" title="中毒">中毒</a>：</b>每2秒，每层造成1点伤害。
+</p><p><a href="../pages/%E8%87%B4%E7%9B%B2.html" title="致盲"><img alt="Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a> <b><a href="../pages/%E8%87%B4%E7%9B%B2.html" title="致盲">致盲</a>：</b>每层降低5%命中率。
+</p><p><a href="../pages/%E5%86%B0%E5%86%B7.html" title="冰冷"><img alt="冰冷" src="../assets/images/cdb29718e7c8b69559d41cde9ef76a105e34d16fba210b61d4c7bded2c706037.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="100" data-file-height="95"></a> <b><a href="../pages/%E5%86%B0%E5%86%B7.html" title="冰冷">冰冷</a>：</b>每层使所有物品触发慢2%。
+</p>
+<h3><span id=".E5.85.B6.E4.BB.96"></span><span class="mw-headline" id="其他">其他</span></h3>
+<p><a href="../pages/%E6%8A%A4%E7%9B%BE.html" title="护盾"><img alt="Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E6%8A%A4%E7%9B%BE.html" title="护盾">护盾</a>：每层抵挡一层伤害。一些伤害来源会越过护甲直接造成伤害。
+</p><p><a href="../pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E6%9C%BA%E5%88%B6%EF%BC%89.html" title="恢复（机制）">恢复</a>：恢复玩家生命值。
+</p><p><a href="../pages/%E6%9C%80%E5%A4%A7%E7%94%9F%E5%91%BD%E5%80%BC.html" title="最大生命值">最大生命值</a>：直接影响玩家生命值。
+</p><p><a href="../pages/%E5%8F%8D%E5%BC%B9.html" title="反弹">反弹</a>：下一个施加到你的减益效果转移到对手。
+</p><p><a href="../pages/%E7%96%B2%E6%83%AB.html" title="疲惫">疲惫</a>：晚上的时候开始，对两名玩家同时造成逐渐提升的伤害。
+</p><p><a href="../pages/%E6%97%A0%E6%95%8C.html" title="无敌">无敌</a>：一段时间内玩家不受到任何伤害。
+</p><p><a href="../pages/%E6%97%A0%E6%95%88%E5%8C%96.html" title="无效化">无效化</a>：阻止获得<a href="../pages/%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="增益效果">增益效果</a>。
+</p><p><a href="../pages/%E5%87%A0%E7%8E%87.html" title="几率">几率</a>：以概率生效的效果。
+</p><p><a href="../pages/%E6%8A%B5%E6%8A%97.html" title="抵抗">抵抗</a>：抵抗可以防止对手施加的<a href="../pages/%E5%87%8F%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="减益效果">减益效果</a>。
+</p><p><a href="../pages/%E7%8B%82%E6%88%98%E5%A3%AB%E4%B9%8B%E6%80%92.html" title="狂战士之怒">狂战士之怒</a>：狂战士之怒是<a href="../pages/%E7%8B%82%E6%88%98%E5%A3%AB.html" title="狂战士">狂战士</a>特有的特殊机制，是一种持续的强化状态。
+</p><p><a href="../pages/%E5%A4%8D%E6%B4%BB.html" title="复活">复活</a>：玩家不死亡而是恢复血量游戏继续。
+</p><p><a href="../pages/%E7%9C%A9%E6%99%95.html" title="眩晕">眩晕</a>：眩晕会暂停所有的物品的冷却一段时间。
+</p><p><a href="../pages/%E5%87%80%E5%8C%96.html" title="净化">净化</a>：移除<a href="../pages/%E5%87%8F%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="减益效果">减益效果</a>。
+</p><p><a href="../pages/%E4%B8%8D%E6%B2%BB.html" title="不治">不治</a>：使你获得的治疗转化为<a href="../pages/%E6%95%88%E6%9E%9C.html" title="效果"><img alt="效果" src="../assets/images/6c7048207cd4e9f458e54517abb1cd006612f145ab0b72eef09288c6069cb21f.png" decoding="async" loading="lazy" width="20" height="20" data-file-width="55" data-file-height="56"></a>伤害。
+</p><p><a href="../pages/%E6%89%BF%E5%8F%97%E4%BC%A4%E5%AE%B3.html" title="承受伤害">承受伤害</a>：影响受到的伤害。
+</p>
+<h3><span id=".E4.B8.BB.E5.AE.A2.E5.9C.BA.E6.9C.BA.E5.88.B6"></span><span class="mw-headline" id="主客场机制">主客场机制</span></h3>
+<p><a href="../pages/%E4%B8%BB%E5%AE%A2%E5%9C%BA.html" title="主客场">主客场</a>机制决定了玩家和敌人相同时点的效果结算顺序。
+</p>
+<h3><span id=".E6.88.98.E6.96.97.E6.97.A5.E5.BF.97"></span><span class="mw-headline" id="战斗日志">战斗日志</span></h3>
+<p><a href="../pages/%E6%88%98%E6%96%97%E6%97%A5%E5%BF%97.html" title="战斗日志">战斗日志</a>可以查看并回放战斗中的所有事件，以及各种数据的统计。
+</p><p><br>
+</p>
+<h2><span id=".E6.B8.B8.E6.88.8F.E8.83.9C.E8.B4.9F"></span><span class="mw-headline" id="游戏胜负">游戏胜负</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:32px;"><a href="../pages/File:Trophy.png.html" class="image"><img src="../assets/images/7ede67899358b313ac712b175eb7bc48b36e452f5357def693b38fac5512de1c.png" decoding="async" loading="lazy" width="30" height="38" class="thumbimage" data-file-width="116" data-file-height="147"></a>  <div class="thumbcaption"><div class="magnify"><a href="../pages/File:Trophy.png.html" class="internal" title="放大"></a></div>胜利</div></div></div><div class="thumb tright"><div class="thumbinner" style="width:32px;"><a href="../pages/File:Heart.png.html" class="image"><img src="../assets/images/02351ef3de77c3e007b73c03155eb9589f6a1df4e11e79995fef2f569a9c4571.png" decoding="async" loading="lazy" width="30" height="25" class="thumbimage" data-file-width="148" data-file-height="125"></a>  <div class="thumbcaption"><div class="magnify"><a href="../pages/File:Heart.png.html" class="internal" title="放大"></a></div>重试数</div></div></div>
+<p>玩家需要尽可能的生存更多回合并拿下更多的胜利（奖杯）。
+</p><p>玩家初始具有满的5次重试数（红心）。在一个回合失败后，失去1点重试数。失去所有重试数后游戏结束。
+</p><p>在第7回合结束第8回合开始时，玩家回复失去的1重试数。
+</p><p>当玩家获得10次回合胜利后，玩家可以选择“到此为止”，或者继续生存至最终18回合并回复失去的1重试数。
+</p>
+<h2><span id=".E6.B8.B8.E6.88.8F.E6.A8.A1.E5.BC.8F"></span><span class="mw-headline" id="游戏模式">游戏模式</span></h2>
+<h3><span id=".E6.8E.92.E5.90.8D.E6.B8.B8.E6.88.8F"></span><span class="mw-headline" id="排名游戏">排名游戏</span></h3>
+<p>总共8个段位，所有玩家的排名从青铜开始，依次往上至最高大爷。每个角色分开计算段位。每个段位需要100排名分数。
+</p><p>玩家会与相同段位的玩家互相匹配战斗。大师及以上段位共用匹配池。
+</p><p>排名模式中成功存活可以增加分数，反之则扣减。增加和扣减的分数取决于获得的胜利数。如果选择了10次胜利“到此为止”，则获得的分数会介于后续可能的最好最差结果之间。
+</p><p>如果18回合结束时仍然有5重试数，则会获得“完美生存奖励”的额外分数。
+</p><p>如果玩家提升了一次段位，也会额外奖励10分数。
+</p>
+<ul class="gallery mw-gallery-nolines">
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Bronze.png.html" class="image" title="青铜"><img alt="青铜" src="../assets/images/e89503ba5530eb904504e3739d80dcfae9b7ff9286eeb89b1313c27931b3dcae.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">青铜</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Silver.png.html" class="image" title="白银"><img alt="白银" src="../assets/images/7a672f212e4c830c49bc8c08e90ca4ab3ca931e34af67cb4b315379c317fe21a.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">白银</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Gold.png.html" class="image" title="黄金"><img alt="黄金" src="../assets/images/05382635b8117c5d0ddc66c04a5a0c6f019e2b420a25615b5a425362a71353db.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">黄金</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Platinum.png.html" class="image" title="白金"><img alt="白金" src="../assets/images/ff2116abb6fa253da67daa778478eaa7dbf7534f3cc1678a7652a4b17687a171.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">白金</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Diamond.png.html" class="image" title="钻石"><img alt="钻石" src="../assets/images/57a4d16ef22aa0c98b9c9fd4483355aaea6f3c2b30030aa789b2b5ae1b2e0f80.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">钻石</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Master.png.html" class="image" title="大师"><img alt="大师" src="../assets/images/32167cf6c29bac26dd3a2d99b4ecc04088ff91cd86f896c4c8f80526b4a0b1eb.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">大师</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Grandmaster.png.html" class="image" title="特级大师"><img alt="特级大师" src="../assets/images/6dbb25e75d66c1eb3f6a21ff4d2b672855af0d4fb44e2d1160e7b9c231570866.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">特级大师</div>
+        </div></li>
+        <li class="gallerybox" style="width: 125px"><div style="width: 125px">
+            <div class="thumb" style="width: 120px;"><div style="margin:0px auto;"><a href="../pages/File:League_Grandma.png.html" class="image" title="大爷"><img alt="大爷" src="../assets/images/b3dea1ee168cbf0d982677a37413ab611c856945fed58c2f71d36dcbe097e4be.png" decoding="async" loading="lazy" width="120" height="120" data-file-width="320" data-file-height="320"></a></div></div>
+            <div class="gallerytext">大爷</div>
+        </div></li>
+</ul>
+<h3><span id=".E4.BC.91.E9.97.B2.E6.B8.B8.E6.88.8F"></span><span class="mw-headline" id="休闲游戏">休闲游戏</span></h3>
+<p>除了不会影响段位，其他规则与排名模式相同。单独使用休闲游戏匹配池进行匹配。
+</p>
+<h3><span id=".E5.85.B6.E4.BB.96.E6.B8.B8.E6.88.8F.E6.A8.A1.E5.BC.8F"></span><span class="mw-headline" id="其他游戏模式">其他游戏模式</span></h3>
+<p>可以自定义规则也可以创建房间，游戏不会上传至服务器和匹配池子。
+</p><p>自定义规则可以设置每回合获得金币数，打折概率，交易概率，<a href="../pages/%E5%AE%9D%E8%97%8F.html" title="宝藏"><img alt="宝藏" src="../assets/images/0a72abbfb2e813f1af78798b4e283207438f217390fb44b22550c4fb821217b9.png" decoding="async" loading="lazy" width="20" height="20" data-file-width="55" data-file-height="56"></a>物品概率及上限，背包是否永久放置，生命值倍数以及所使用的匹配池。
+</p><p>如果玩家没有可用的匹配对象，会使用玩家的“黑暗倒影”复制。
+</p>
+<table class="navbox mw-collapsible" data-expandtext="显示" data-collapsetext="隐藏"><tbody><tr class="navbox-title"><th colspan="2" scope="col"><span class="navbox-vde"><a href="#" title="Template:游戏机制"><span title="View this navbox template">v</span></a> · <span class="plainlinks"><a class="text" href="#"><span title="Discuss this navbox template">d</span></a> · <a class="text" href="#"><span title="Edit this navbox template">e</span></a></span></span><a class="mw-selflink selflink">游戏机制</a></th></tr><tr class="navbox-gutter"><td colspan="2"></td></tr><tr class="navbox-row"><th class="navbox-group" scope="row">物品栏和商店</th><td class="navbox-list"><div class="hlist"><a href="../pages/%E7%89%A9%E5%93%81%E6%A0%8F.html" title="物品栏">物品栏</a> • <a href="../pages/%E5%90%88%E6%88%90%E9%85%8D%E6%96%B9.html" title="合成配方">合成配方</a> • <a class="mw-selflink-fragment" href="#商店机制">商店机制</a> • <a href="../pages/%E7%A8%80%E6%9C%89%E5%BA%A6.html" title="稀有度">稀有度</a> • <a href="../pages/%E5%AE%9D%E8%97%8F.html" title="宝藏">宝藏</a> • <a href="../pages/%E4%BA%A4%E6%98%93.html" title="交易">交易</a></div></td></tr><tr class="navbox-gutter"><td colspan="2"></td></tr><tr class="navbox-row alt"><th class="navbox-group" scope="row">战斗</th><td class="navbox-list"><div class="hlist"><a href="../pages/%E4%BC%A4%E5%AE%B3.html" title="伤害">伤害</a> • <a href="../pages/%E5%91%BD%E4%B8%AD%E7%8E%87.html" title="命中率">命中率</a> • <a href="../pages/%E5%86%B7%E5%8D%B4.html" title="冷却">冷却</a> • <a href="../pages/%E6%9A%B4%E5%87%BB.html" title="暴击">暴击</a> • <a href="../pages/%E7%8B%82%E6%88%98%E5%A3%AB%E4%B9%8B%E6%80%92.html" title="狂战士之怒">狂战士之怒</a> • <a href="../pages/%E6%8A%A4%E7%9B%BE.html" title="护盾"><img alt="Block" src="../assets/images/c60e8992d935b6a1c7ea2a16adb9d48e885bcac7f902c71e2dd2812869dcf6b5.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E6%8A%A4%E7%9B%BE.html" title="护盾">护盾</a> • <a href="../pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E6%9C%BA%E5%88%B6%EF%BC%89.html" title="恢复（机制）">恢复</a> • <a href="../pages/%E6%9C%80%E5%A4%A7%E7%94%9F%E5%91%BD%E5%80%BC.html" title="最大生命值">最大生命值</a> • <a href="../pages/%E7%96%B2%E6%83%AB.html" title="疲惫">疲惫</a> • <a href="../pages/%E6%97%A0%E6%95%8C.html" title="无敌">无敌</a> • <a href="../pages/%E6%89%BF%E5%8F%97%E4%BC%A4%E5%AE%B3.html" title="承受伤害">承受伤害</a> • <a href="../pages/%E6%97%A0%E6%95%88%E5%8C%96.html" title="无效化">无效化</a> • <a href="../pages/%E5%8F%8D%E5%BC%B9.html" title="反弹">反弹</a> • <a href="../pages/%E5%A4%8D%E6%B4%BB.html" title="复活">复活</a> • <a href="../pages/%E6%8A%B5%E6%8A%97.html" title="抵抗">抵抗</a> • <a href="../pages/%E7%9C%A9%E6%99%95.html" title="眩晕">眩晕</a> • <a href="../pages/%E5%87%80%E5%8C%96.html" title="净化">净化</a> • <a href="../pages/%E4%B8%8D%E6%B2%BB.html" title="不治">不治</a> • <a href="../pages/%E5%87%A0%E7%8E%87.html" title="几率">几率</a></div></td></tr><tr class="navbox-gutter"><td colspan="2"></td></tr><tr class="navbox-row"><th class="navbox-group" scope="row"><a href="../pages/%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="增益效果">增益效果</a></th><td class="navbox-list"><div class="hlist"><a href="../pages/%E5%85%85%E8%83%BD.html" title="充能"><img alt="Empower" src="../assets/images/349e321ec166880a63f1dd123e3da914ce93abffd3f91ae924400e00513c2c29.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="100" data-file-height="95"></a><a href="../pages/%E5%85%85%E8%83%BD.html" title="充能">充能</a> • <a href="../pages/%E7%8B%82%E7%83%AD.html" title="狂热"><img alt="Heat" src="../assets/images/b7be4cfac26858bedd57434ecac91dca0930faa68bb21da355f21bbb2dcd4c98.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="100" data-file-height="95"></a><a href="../pages/%E7%8B%82%E7%83%AD.html" title="狂热">狂热</a> • <a href="../pages/%E5%B9%B8%E8%BF%90.html" title="幸运"><img alt="Luck" src="../assets/images/1b6e57002dccd2aa7c95dd103f4b25af58e02d7dca2a1778084e254b89733e2f.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E5%B9%B8%E8%BF%90.html" title="幸运">幸运</a> • <a href="../pages/%E9%AD%94%E6%B3%95.html" title="魔法"><img alt="魔法" src="../assets/images/cf43028c45b327a2b1ac42f4dc0529ff9595b76c589614dd132b36d4b5fca111.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E9%AD%94%E6%B3%95.html" title="魔法">魔法</a> • <a href="../pages/%E6%81%A2%E5%A4%8D%EF%BC%88%E5%A2%9E%E7%9B%8A%E6%95%88%E6%9E%9C%EF%BC%89.html" title="恢复（增益效果）"><img alt="Regeneration" src="../assets/images/ee224adbce221559b20166ac7bcdde6eb66fc64199d9d3154f5efbbdb7df6ec0.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E6%81%A2%E5%A4%8D.html" class="mw-disambig" title="恢复">恢复</a> • <a href="../pages/%E5%B0%96%E5%88%BA.html" title="尖刺"><img alt="Spikes" src="../assets/images/23bd118f23fe8f83e140e0e65ef5ad50c5ed726bab7e5777e31776c4587296d7.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E5%B0%96%E5%88%BA.html" title="尖刺">尖刺</a> • <a href="../pages/%E5%90%B8%E8%A1%80.html" title="吸血"><img alt="Vampirism" src="../assets/images/2abb3f4c22d61373b694d27aa7fb723f061f82ab4efc15104ae5a2a03f991a77.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E5%90%B8%E8%A1%80.html" title="吸血">吸血</a></div></td></tr><tr class="navbox-gutter"><td colspan="2"></td></tr><tr class="navbox-row alt"><th class="navbox-group" scope="row"><a href="../pages/%E5%87%8F%E7%9B%8A%E6%95%88%E6%9E%9C.html" title="减益效果">减益效果</a></th><td class="navbox-list"><div class="hlist"><a href="../pages/%E8%87%B4%E7%9B%B2.html" title="致盲"><img alt="Blind" src="../assets/images/5eaaced3df6483072a678d5647865e6bfbb4b552b6d599a0fb58d8a30382280a.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E8%87%B4%E7%9B%B2.html" title="致盲">致盲</a> • <a href="../pages/%E5%86%B0%E5%86%B7.html" title="冰冷"><img alt="冰冷" src="../assets/images/cdb29718e7c8b69559d41cde9ef76a105e34d16fba210b61d4c7bded2c706037.png" decoding="async" loading="lazy" width="15" height="14" data-file-width="100" data-file-height="95"></a><a href="../pages/%E5%86%B0%E5%86%B7.html" title="冰冷">冰冷</a> • <a href="../pages/%E4%B8%AD%E6%AF%92.html" title="中毒"><img alt="中毒" src="../assets/images/684221570210a465deb115574d7c348645001606a0562d825e488b0b57fcc8db.png" decoding="async" loading="lazy" width="15" height="15" data-file-width="100" data-file-height="100"></a><a href="../pages/%E4%B8%AD%E6%AF%92.html" title="中毒">中毒</a></div></td></tr><tr class="navbox-gutter"><td colspan="2"></td></tr><tr class="navbox-row"><th class="navbox-group" scope="row">其他</th><td class="navbox-list"><div class="hlist"><a href="../pages/%E4%B8%BB%E5%AE%A2%E5%9C%BA.html" title="主客场">主客场</a> • <a href="../pages/%E6%88%98%E6%96%97%E6%97%A5%E5%BF%97.html" title="战斗日志">战斗日志</a> • <a class="mw-selflink-fragment" href="#游戏胜负">游戏胜负</a> • <a class="mw-selflink-fragment" href="#游戏模式">游戏模式</a></div></td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Cached time: 20251219031634
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.248 seconds
+Real time usage: 0.388 seconds
+Preprocessor visited node count: 389/1000000
+Revision size: 10856/4194304 bytes
+Post‐expand include size: 11445/4194304 bytes
+Template argument size: 54/4194304 bytes
+Highest expansion depth: 6/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3956/10000000 bytes
+Lua time usage: 0.018/15.000 seconds
+Lua memory usage: 1077558/52428800 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  245.017      1 -total
+ 76.15%  186.583      2 Template:Main
+  5.40%   13.230      1 Template:游戏机制
+  4.32%   10.578      1 Template:Navbox
+  0.68%    1.674      2 Template:图标/方片
+  0.64%    1.562      2 Template:图标/星星
+  0.61%    1.502      6 Template:图标/金币
+  0.60%    1.482      2 Template:图标/护盾
+  0.59%    1.436      2 Template:图标/近战
+  0.59%    1.435      2 Template:图标/吸血
+-->
+
+<!-- Saved in parser cache with key backpackbattles_zh:pcache:idhash:337-0!userlang=zh-cn!zh-cn and timestamp 20251219031634 and revision id 5888. Rendering was triggered because: page_view
+ -->
+</div>
+      </main>
+    </div>
+    <footer class="site-footer">离线版本，仅供本地阅读。</footer>
+  </body>
+</html>
